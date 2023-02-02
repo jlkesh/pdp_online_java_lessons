@@ -26,10 +26,10 @@
 
 * Base64 nima ?
 * Base64 encoding and decoding nima uchun kerak ?
-* jar fayl dan foydalanishni foydali tomonlari ?
-* **manifest** fayl qanday fayl ?
-* **manifest** fayl nima uchun kerak ?
-* **executable** jar qanday jar ?
+* Base64 encoding and decoding jarayoni qandey amalga oshiriladi ?
+* Base64 xar bir belgi uchun nechchi bayt xotiradan joy egallaydi ?
+* URL Base64 nima ?
+* MIME Base64 nima ?
 
 </details>
 
