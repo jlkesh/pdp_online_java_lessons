@@ -1,7 +1,7 @@
 # Beshinchi Modul uchun Intervyu Savollar
 
 <details>
-<summary style="color : green; font-weight:bold; font-size: 32px">Lesson 1 (Mailing)</summary>
+    <summary>Lesson 1 (Mailing)</summary>
 
 * SSL nima ?
 * TLS nima ?
@@ -10,7 +10,7 @@
 </details>
 
 <details>
-<summary style="color : green; font-weight:bold; font-size: 32px">Lesson 2 (Jar Files)</summary>
+    <summary>Lesson 2 (Jar Files)</summary>
 
 * jar fayl nima ?
 * jar fayl dan foydalanishni foydali tomonlari ?
@@ -20,9 +20,8 @@
 
 </details>
 
-
 <details>
-<summary style="color : green; font-weight:bold; font-size: 32px">Lesson 3 (Base64)</summary>
+    <summary>Lesson 3 (Base64)</summary>
 
 * Base64 nima ?
 * Base64 encoding and decoding nima uchun kerak ?
@@ -33,3 +32,25 @@
 
 </details>
 
+<details>
+<summary>Lesson 4 (Maven)</summary>
+
+* Maven nima ?
+* Maven nima uchun kerak bo'ladi ?
+* Dependency larda scope nima ma'noni anglatadi
+</details>
+
+<details>
+<summary>Lesson 5/6 (Lombok)</summary>
+
+* Lombo ni vazifasi nima ?
+</details>
+
+<details>
+<summary>Lesson 7 (Faker)</summary>
+* JavaFaker Library nima uchun ishlatiladi ?
+</details>
+
+<details>
+<summary>Lesson 8 ( )</summary>
+</details>

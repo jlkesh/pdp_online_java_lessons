@@ -1,0 +1,1 @@
+### Barcha kodlar prezentatsiyada
