@@ -15,6 +15,7 @@
 * JVM nima ?
 * Devtools nima ?
 * JDK components ?
+* Bytecode nima ?
 
 </details>
 
@@ -30,6 +31,7 @@
 * Java-da Nechi xil turdagi commentlar bor ?
 * Java-da nechta keywordlar bor ?
 * Java-da nechta turdagi variablelar mavjud ?
+* Java-da primative type bilan non-primative nima farqi bor ?
 * Variable scope nima ?
 * Java-da qancha scopelar mavjud ?
 * Java-ni nechinchi versisyasidan Scanner qo'shilgan ?
@@ -69,6 +71,10 @@
 
 * Execution Flow nima ?
 * Control Flow nima?
+* if nima ?
+* if nima uchun ishlatamiz ?
+* Loop nima?
+* Loop nima uchun ishlatamiz ?
 * Java-da Control Flow ning nechi xil turi mavjud ?
 * Switch statement qanday ishlaydi ?
 * Unicode system nima uchun kerak ?
