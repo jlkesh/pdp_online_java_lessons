@@ -50,7 +50,7 @@
 * Unary operator nima ?
 * Binary operator nima ?
 * Ternary operator nima ?
-* Expression nima ? 
+* Expression nima ?
 * Java-da named operator nima ?
 * Java-da Arithmetic operator nima ?
 * Java-da Arithmetic operationlarni priotiry levellar qanday ?
@@ -142,5 +142,32 @@
     String s3 = "Scientech";
     String s4 = "Scientech";
     ``` 
+* String class qanday interfacelardan implement olgan ?
+* String Thread-safe mi ?
+* String classni kamchiliklari ?
+* String wrapper classmi ?
+* String intern() method nima uchun ishlatiladi ?
+
+</details>
+
+<details>
+<summary>Lesson 9 (String Formatting)</summary>
+
+* Java-da Formatting nima ?
+* String classni format() method javani nechinchi versiyasida taqdim etilgan ?
+* String classni format method qachon ishlatishimiz kerak ?
+* '%s' belgisini nima uchun ishlatamiz ?
+* Java-da MessageFormat class nima uchun ishlatamiz ?
+* MessageFormat format() method nima ?
+
+</details>
+
+<details>
+<summary>Lesson 10 (Principles)</summary>
+
+* Programming Principles nima ?
+* Qanday qilib effective code yozasiz ?
+* DRY nima ?
+* KISS nima ?
 
 </details>
