@@ -2,8 +2,6 @@
 
 <details>
     <summary>Lesson 1 (Mailing)</summary>
-     <summary>Section 2 (Mailing)</summary>
-     <summary>Section 2 (Mailing)</summary>
     <details>
          <summary>Section 1 (Mailing)</summary>
 
