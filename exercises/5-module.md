@@ -53,11 +53,8 @@ _HTML kodlar_
 <details>
 <summary>Lesson 12</summary>
 
-1. O'zingizni comparatoringizni yozing. HTML dagi **table** ko'rinishida bo'lsin ya'ni
-
-
+1. O'zingizni comparatoringizni yozing. HTML dagi **table** ko'rinishida bo'lsin ya'ni quyidagi ko'rinishda
 ```html
-
 <table>
     <tr>
         <th>ID</th>
@@ -87,8 +84,7 @@ _HTML kodlar_
     </tr>
 </table>
 ```
-**va natija mana bunday ko'rinishda bo'ladi**
-
+**va natijani xyz.html degan fayl ga qo'yib uni brauser da ochsangiz mana bunday ko'rinishda bo'ladi**
 
 <html>
 <head>
@@ -124,4 +120,3 @@ _HTML kodlar_
 </html>
 
 </details>
-
