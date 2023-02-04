@@ -20,7 +20,7 @@
 
 
 <details>
-<summary>Lesson 2 (Java Platform)</summary>
+<summary>Lesson 2 (Data Types)</summary>
 
 * Token nima ?
 * Translation unit nima ?
@@ -34,6 +34,7 @@
 * Java-da qancha scopelar mavjud ?
 * Java-ni nechinchi versisyasidan Scanner qo'shilgan ?
 * Scanner class qanday resourcelardan ma'lumotlarni o'qiy oladi ?
+* Java-da nechi xil turdagi data type bor?
 * Scanner bug ?
 * Console class nima ?
 * Javani nechinchi versiyasida Console taqdim etilgan ?
@@ -43,7 +44,7 @@
 </details>
 
 <details>
-<summary>Lesson 3 (Compiler and interpreter)</summary>
+<summary>Lesson 3 (Operators)</summary>
 
 * Java-da Operator nima ?
 * Operandlar soniga qarab Operatorlar nechi turga bo'linadi ?
@@ -128,15 +129,15 @@
 <summary>Lesson 8 (String Part 2)</summary>
 
 * Java-da String Constant pool nima ?
-* Java-da String literal nima ? 
+* Java-da String literal nima ?
 * String literal xotirada qanday saqlanadi ?
 * Nima uchun Java String literaldan foydalanadi ?
 * Quyidagi code da nechta object yaratiladi ?
-  * ```java
+    * ```java
     String s = new String("Hello");    
     ```
 * Quyidagi code da nechta object yaratiladi ?
-  * ```java
+    * ```java
     String s1 = new String("Scientech");
     String s2 = new String("Scientech");
     String s3 = "Scientech";
@@ -159,6 +160,15 @@
 * '%s' belgisini nima uchun ishlatamiz ?
 * Java-da MessageFormat class nima uchun ishlatamiz ?
 * MessageFormat format() method nima ?
+
+</details>
+
+<details>
+<summary>Lesson 9 (Formatting)</summary>
+
+* string format methodiga bitta misol yozing.
+* string format method foydalanib kirib kelgan strngga "Welcome to " qo'shimchasini qo'shib ekranga chiqaruvchi dastur
+  yozing.
 
 </details>
 
