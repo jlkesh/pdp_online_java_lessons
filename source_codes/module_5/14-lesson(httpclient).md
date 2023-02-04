@@ -2,7 +2,7 @@
 ````shell
 java -jar seeder.jar
 ````
-#### Bun esa server application [bu yerdan](https://github.com/jlkesh/pdp_online_java_lessons/blob/main/jars/demo_for_httclient-0.0.1-SNAPSHOT.jar) uni yuklab olib quyidagi command bilan iwga tushirish kerak
+#### Bu yerdan esa server application [bu yerdan](https://github.com/jlkesh/pdp_online_java_lessons/blob/main/jars/demo_for_httclient-0.0.1-SNAPSHOT.jar) uni yuklab olib quyidagi command bilan ishga tushirish kerak
 ````shell
 java -jar demo_for_httclient-0.0.1-SNAPSHOT.jar
 ````
