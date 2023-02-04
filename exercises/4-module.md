@@ -45,3 +45,5 @@
 * Thread priority yuqori bo'lgan threadlar bilan past bo'lgan thread o'rtasidagi farq ? 
 
 </details>
+
+
