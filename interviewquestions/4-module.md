@@ -20,6 +20,7 @@
             <summary>Lesson 1.2 (Threads)</summary>
             <ul>
                 <li>Java-da nechi xil usulda thread yaratish mumkin ?</li>
+                <li>Runnable nima ?</li>
                 <li>Threadni Runnable bilan yaratgan yaxshimi yoki Thread class orqalimi ?</li>
                 <li>Thread class ni join() method nima uchun ishlatiladi ?</li>
                 <li>Thread class ni stop() method nima uchun ishlatiladi ?</li>
@@ -155,6 +156,212 @@
     </ul>
 </details>
 
+<details>
+<summary>Lesson 4</summary>
+    <ul>
+        <details>
+            <summary>Lesson 4.1 (Tasks and Thread Pools)</summary>
+            <ul>
+                <li>Thread Pools nima ?</li>
+                <li>Executor Framework qanday framework ?</li>
+                <li>Executor Framework nima maqsadda Javani 5chi versiyasida qoshilgan ?</li>
+                <li>Executorlar qanday ishlashni tushintirib bering.</li>
+                <li>Executor Framework afzalliklari ?</li>
+                <li>Javada nechi xil Executor mavjud ?</li>
+                <li>Executor tasklarni nimada saqlaydi ?</li>
+                <li>Executorlarni nechi xil usulda o'chirishimiz mumkin ?</li>
+            </ul>
+        </details>
+    </ul>
+    <ul>
+        <details>
+            <summary>Lesson 4.2 (Callable and Future)</summary>
+            <ul>
+                <li>Callable nima ?</li>
+                <li>Future nima ?</li>
+                <li>Callable va Runnable o'rtasidagi farq ?</li>
+                <li>FutureTask nima ?</li>
+                <li>Future class isDone() nima uchun ishlatiladi ?</li>
+                <li>Future class get() nima uchun ishlatiladi ?</li>
+            </ul>
+        </details>
+    </ul>
+    <ul>
+        <details>
+            <summary>Lesson 4.3 (ThreadLocal class)</summary>
+            <ul>
+                <li>ThreadLocal nima ?</li>
+                <li>ThreadLocalRandom nima ?</li>
+                <li>ThreadLocal qanday holatlarda foydalanishimiz kerak ?</li>
+                <li>ThreadLocal withInitial() static method nima uchun ishlatamiz ?</li>
+            </ul>
+        </details>
+    </ul>
+</details>
+
+<details>
+<summary>Lesson 5</summary>
+    <ul>
+        <details>
+            <summary>Lesson 5.1 (Fork Join Pool)</summary>
+            <ul>
+                <li>Fork Join Framework nima ?</li>
+                <li>Fork Join Framework nima uchun javaga qo'shilgan ?</li>
+                <li>Fork Join Frameworkni afzalliklari ?</li>
+                <li>Fork Join Frameworkni tasklari o'chirtga qo'yish uchun qaysi queuedan foydalanadi ?</li>
+                <li>Fork Join Framework va Executor Framework o'rtasidagi farq ?</li>
+            </ul>
+        </details>
+    </ul>
+    <ul>
+        <details>
+            <summary>Lesson 5.2 (Asynchronous Computations)</summary>
+            <ul>
+                <li>Asynchronous programming nima ?</li>
+                <li>CompletableFuture nima ?</li>
+                <li>CompletableFuture nima uchun ishlatiladi ?</li>
+                <li>CompletableFuture va Future o'rtasidagi farq ?</li>
+                <li>CompletableFuture thenApply() method nima uchun ishlatiladi ?</li>
+                <li>CompletableFuture thenCompose() method nima uchun ishlatiladi ?</li>
+            </ul>
+        </details>
+    </ul>
+    <ul>
+        <details>
+            <summary>Lesson 5.3 (Singleton Design Pattern Issue with Multithreading)</summary>
+            <ul>
+                <li>Singleton Design Pattern nima ?</li>
+            </ul>
+        </details>
+    </ul>
+</details>
+
+<details>
+<summary>Lesson 6</summary>
+    <ul>
+        <details>
+            <summary>Lesson 6.1 (Date and Calendar classes)</summary>
+            <ul>
+                <li>Date nima ?</li>
+                <li>Calendar nima ?</li>
+                <li>Calendar, Date classlarni nima uchun ishlatamiz ?</li>
+                <li>Date classni kamchiliklari ?</li>
+                <li>Calendar classni kamchiliklari ?</li>
+                <li>SimpleDateFormat nima ?</li>
+                <li>SimpleDateFormat format() method nima uchun ishlatamiz ?</li>
+            </ul>
+        </details>
+    </ul>
+    <ul>
+        <details>
+            <summary>Lesson 6.2 (Time API)</summary>
+            <ul>
+                <li>Time API nima ?</li>
+                <li>Time API nima uchun Java 8ga qo'shilgan ?</li>
+                <li>Duration nima ?</li>
+                <li>Period nima ?</li>
+                <li>Date va LocalDate o'rtasidagi farq ?</li>
+                <li>Date va ZonedDate o'rtasidagi farq ?</li>
+                <li>Time va LocalTime o'rtasidagi farq ?</li>
+            </ul>
+        </details>
+    </ul>
+</details>
+
+<details>
+<summary>Lesson 7</summary>
+    <ul>
+        <details>
+            <summary>Lesson 7.1 (Input/Output Streams)</summary>
+            <ul>
+                <li>Input/Output Stream nima ?</li>
+                <li>File class nima ?</li>
+                <li>FileInputStream va FileOutputStream classlarni tushintirib bering ?</li>
+                <li>DataInputStream va DataOutputStream classlarni tushintirib bering ?</li>
+                <li>FileReader va FileWriter classlari nima uchun ishlatiladi ?</li>
+                <li>FileReader va FileWriter classlari nima uchun ishlatiladi ?</li>
+                <li>BufferedReader va BufferedWriter classlari nima uchun ishlatiladi ?</li>
+                <li>File(Reader/Writer) va Buffered(Reader/Writer) o'rtasidagi farq ?</li>
+            </ul>
+        </details>
+    </ul>
+    <ul>
+        <details>
+            <summary>Lesson 7.2 (NIO)</summary>
+            <ul>
+            </ul>
+        </details>
+    </ul>
+    <ul>
+        <details>
+            <summary>Lesson 7.3 (Serialization and Deserialization)</summary>
+            <ul>
+                <li>Serialization nima ?</li>
+                <li>Deserialization nima ?</li>
+                <li>Externalization nima ?</li>
+                <li>Externalizable va Serializable interfacelari o'rtasidagi farq ?</li>
+                <li>SerialVersionUID nima ?</li>
+                <li>marker interface nima ?</li>
+                <li>transient nima ?</li>
+                <li>static o'zgaruvchilar serialize bo'ladimi ?</li>
+            </ul>
+        </details>
+    </ul>
+</details>
+
+<details>
+<summary>Lesson 8</summary>
+    <ul>
+        <details>
+            <summary>Lesson 8.1 (Regexp)</summary>
+            <ul>
+                <li>Regular Expression nima ?</li>
+                <li>Regular Expression nima uchun ishlatiladi ?</li>
+                <li>Pattern nima ?</li>
+                <li>Matcher nima ?</li>
+                <li>Pattern classini matcher() method nima uchun ishlatiladi ?</li>
+                <li>Matcher classini matches() method nima uchun ishlatiladi ?</li>
+                <li>Matcher classini find() method nima uchun ishlatiladi ?</li>
+            </ul>
+        </details>
+    </ul>
+</details>
+
+<details>
+<summary>Lesson 9</summary>
+    <ul>
+        <details>
+            <summary>Lesson 9.1 (Git)</summary>
+            <ul>
+                <li>Git nima ?</li>
+                <li>Version of control nima ?</li>
+                <li>git bizga nima uchun kerak nima ?</li>
+            </ul>
+        </details>
+    </ul>
+    <ul>
+        <details>
+            <summary>Lesson 9.2 (Git)</summary>
+            <ul>
+                <li>Gitda merge qilish nima ?</li>
+            </ul>
+        </details>
+    </ul>
+</details>
+
+<details>
+<summary>Lesson 10</summary>
+    <ul>
+        <details>
+            <summary>Lesson 10 (Logging)</summary>
+            <ul>
+                <li>Logging nima ?</li>
+                <li>Logging javani nechinchi versiyasida qo'shilgan ?</li>
+                <li>necha xil log level bor ?</li>
+            </ul>
+        </details>
+    </ul>
+</details>
 
 
 
