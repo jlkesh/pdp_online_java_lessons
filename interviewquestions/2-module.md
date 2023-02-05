@@ -87,8 +87,8 @@
                 <li>Javada bir nechta Inheritancedan foydalansa bo'ladimi ?</li>
                 <li>Superclass va subclass qanday classlar ?</li>
                 <li>Supclass superclassni nimalarini meros qilib oladi ?</li>
-                <li>Cospic class deb qaysi classga aytiladi ?</li>
-                <li>Cospic classning qanday methodlari bor ?</li>
+                <li>Cosmic class deb qaysi classga aytiladi ?</li>
+                <li>Cosmic classning qanday methodlari bor ?</li>
             </ul>
         </details>
     </ul>
@@ -224,6 +224,7 @@
             <ul>
                 <li>Marker interface qanday interface ?</li>
                 <li>Marker interfacega misollar keltiring.</li>
+                <li>Marker interfacega bosh interface bo'lsa nima uchun kerak ?.</li>
             </ul>
         </details>
     </ul>
