@@ -289,6 +289,9 @@
         <details>
             <summary>Lesson 7.2 (NIO)</summary>
             <ul>
+                <li>NIO nima ?</li>
+                <li>NIO nima uchun Java-ni 7chi o'zgartirishlar kiritildi ?</li>
+                <li>Oddiy I/O stream bilan NIO nima farqi bor ?</li>
             </ul>
         </details>
     </ul>
@@ -333,17 +336,22 @@
         <details>
             <summary>Lesson 9.1 (Git)</summary>
             <ul>
-                <li>Git nima ?</li>
+                <li>Git nima ? Uni qanday ishlatishimiz mumkin.</li>
                 <li>Version of control nima ?</li>
                 <li>git bizga nima uchun kerak nima ?</li>
+                <li>git 'pull request' va 'psuh request' larni o'rtasida nima farq bor ?</li>
             </ul>
         </details>
     </ul>
     <ul>
         <details>
-            <summary>Lesson 9.2 (Git)</summary>
+            <summary>Lesson 9.2 (Github)</summary>
             <ul>
+                <li>Github nima ?</li>
+                <li>Git va Github o'rtasidagi farq ?</li>
                 <li>Gitda merge qilish nima ?</li>
+                <li>Git repository nima ?</li>
+                <li>Git clone nima qiladi ?</li>
             </ul>
         </details>
     </ul>
@@ -356,6 +364,7 @@
             <summary>Lesson 10 (Logging)</summary>
             <ul>
                 <li>Logging nima ?</li>
+                <li>Logging tashlash bizga nima uchun kerak ?</li>
                 <li>Logging javani nechinchi versiyasida qo'shilgan ?</li>
                 <li>necha xil log level bor ?</li>
             </ul>
