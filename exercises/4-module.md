@@ -31,52 +31,14 @@ public class Counter {
 }
 ```
 
-* Synchronized keywordidan foydalinib tepadagi methodini qayta yozing.
-* Race condition ga misol yozing.
-* Race condition oldini olish uchun Synchronized keywordidan foydalanib tepadagi classga o'xshagan class yozing.
-* Race condition oldini olish uchun Lock lardan foydalanib tepadagi classga o'xshagan class yozing.
-* Race condition oldini olish uchun Volatile keywordidan foydalanib tepadagi classga o'xshagan class yozing.
-* Deadlock ga tushuvchi class yozing. pastki kodga qarang.
+* **Synchronized** keywordidan foydalinib tepadagi methodini qayta yozing.
+* **Synchronized** method va blocklardan foydalanib dastur yozing.
+* **Race condition** ga misol yozing.
+* **Race condition** oldini olish uchun Synchronized keywordidan foydalanib tepadagi classga o'xshagan class yozing.
+* **Race condition** oldini olish uchun Lock lardan foydalanib tepadagi classga o'xshagan class yozing.
+* **Field Visibility** muammosini xosil qiling va shu muammoni xal qilishda **Volatile** keywordidan foydalanib tepadagi classga o'xshagan class yozing.
+* **Deadlock** ga tushuvchi class yozing.
 
-```java
-public class SyncThread implements Runnable {
-
-    private Object obj1;
-    private Object obj2;
-
-    public SyncThread(Object obj1, Object obj2) {
-        this.obj1 = obj1;
-        this.obj2 = obj2;
-    }
-
-    @Override
-    public void run() {
-        String name = Thread.currentThread().getName();
-        System.out.println(name + " acquiring lock on " + obj1);
-        synchronized (obj1) {
-            System.out.println(name + " acquiring lock on " + obj1);
-            work();
-            System.out.println(name + " acquiring lock on " + obj2);
-            synchronized (obj2) {
-                System.out.println(name + " acquiring lock on " + obj2);
-                work();
-            }
-            System.out.println(name + " released lock on " + obj2);
-        }
-        System.out.println(name + " released lock on " + obj1);
-        System.out.println(name + " finished execution.");
-
-    }
-
-    private void work() {
-        try {
-            Thread.sleep(30000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-}
-```
 
 </details>
 
@@ -137,7 +99,7 @@ public class Counter {
 * Har 1 minutda ekranga hozirgi vaqtni chiqaruvchi dastur yozing.
 * SimpleDateFormat classidan foydalanib Stringni Date parse qiladigan class yozing.
 * Time API foydalanib TODO app yozing va taskni vaqti yetib kelganda ekranga habar chiqarsin.
-
+![todo picture](https://github.com/jlkesh/pdp_online_java_lessons/tree/main/statics/img_1.png)
 </details>
 
 <details>
@@ -171,12 +133,12 @@ public class Counter {
 <details>
 <summary>Lesson 10</summary>
 
-* Tepadagi TODO appni ekranga log tashlaydigan qilib qayta yozing.
+* Tepadagi(Lesson-6 dagi) TODO appni ekranga log tashlaydigan qilib qayta yozing.
 
 </details>
 
 <details>
-<summary>Extra</summary>
+<summary>Module uchun Mashq</summary>
 
 * Chat App yozing. Barcha ma'lumotlarni fileda saqlang. Authorization qilib keyin chatni ishlata olsin!
   email orqali registeratsiya qila olsin faqat. Login ham email orqali bo'ladi regexpdan foydalanib userni barcha
