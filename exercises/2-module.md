@@ -42,31 +42,6 @@
 </details>
 </ul>
 
-### Pdp ning vazifalari
-
-1 - topshiriq Oson
-X va Y koordinatalarni ifodalovchi atributlari bor bo’lgan Point classini yozing.
-Koordinatalarni “(45, 56)” shaklda chop etuvchi printXY() methodini yozing.
-
-2 - topshiriq Oson
-To’g’ri burchakli uchburchak klassini yarating. Uning barcha atributlari va
-methodlariga mos nom va toifa tanlang. (Eni va bo’yi attributlari, Perimetrini
-va Yuzasini hisoblaydigan 2 ta methodi bo’lsin).
-
-3 - topshiriq Qiyin
-Ikkita atribut: firstAtribut va secondAttribut larga ega MyClass nomli klass
-yarating. Ushbu atributlar qiymatini aboutAttributes, yig’indisini sumAttributes,
-kattasini maxAttribute ekranga chiqazadigan methodlarini yarating.
-
-4 - topshiriq Qiyin
-Quyidagi 3ta attribute bor bo’lgan Date klassini yarating: yil, oy va kun.
-15.05.2020 formatdagi sanani chop etuvchi mehod yarating.
-
-5 - topshiriq Qiyin
-Quyidagi atributlari bor bo’lgan Student nomli klass yarating:
-familiya, ismi, guruh nomeri, o’qiydigan fanlari (5 ta fandan iborat massiv).
-O’qidigan fanlari ro’yxatini ekranga chiqazuvchi printSubjects nomli method yarating
-
 </details>
 
 <details>
@@ -123,21 +98,6 @@ Masalan: com.pdp.online.task.one.Rectangle, com.pdp.online.task.two.User
 </details>
 </ul>
 
-### Pdp ning vazifalari
-
-1.Oson
-Quyidagi 3ta attribute bor bo’lgan Time klassini encapsulation prinsipi asosida yarating: soat, minut, va sekund. “soat:
-minut:sekund” (Masalan: 01:25:08) formatdagi vaqtni qaytaruvchi mehod yarating.
-
-2.Qiyin
-Quyidagi attributlardan iborat Book klassini encapsulation prinsipi asosida yarating: nomi, avtorlari (bir nechta
-bo’lishi mumkin), ISBN(13 ta sondan iborat xalqaro kitob raqami, masalan 012345689112) va narxi.
-Kitob nomi va avtorlarini chop etuvchi method yarating.
-
-3.JudaQiyin
-write methodini ruchka kotta harfni yozganda kichik harfga qaraganda 2 marta ko'p siyoh sarflaydigan, probel (bo'sh joy)
-ni yozganda siyoh sarflanmaydigan va siyoh tugagan payt yozishdan to'xtaydigan qilib o'zgartirish
-
 </details>
 
 <details>
@@ -167,21 +127,6 @@ Rasmbda berilgan struktura asosida classlarni yarating.
 
 </details>
 </ul>
-
-### Pdp vaziafalari
-
-other topshiriq -
-Har qanday hayvonning oyoqlari(nectaligi) va rangi bor. Ayrim hayvonlarning sut emizuvchilik xususiyati mavjud, Uy
-havonining ismi(laqabi) bor. Qushlar ham hayvon bo’lib qanotining uzunligi bor va ular uchadigan yoki uchmaydigan
-bo’lishadi. Tuyaqush uchmaydigan qush va ko’rshapalak sut emizuvchi hisoblanadi.
-Hayvon (Animal) va uy hayvoni (Pet), qush(Bird), mushuk (Cat), it(Dog), sigir (Cow), Tuyaqush(Straus), Ko'rshapalak(
-Bat), burgut(Eagle)  klasslarini OOPning inheritance prinsiplari asosida yarating. Klasslarning voris olish sxemasini
-tuzing. main methodida harbir hayvondan 1 tadan object yarating.
-
-<img src="../needed_sources/vazifa_4_1.png" alt="not found">
-<img src="../needed_sources/vazifa_4_2.png" alt="not found">
-<img src="../needed_sources/vazifa_4_3.png" alt="not found">
-
 </details>
 
 <details>
