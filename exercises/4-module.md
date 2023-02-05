@@ -32,7 +32,6 @@ public class Counter {
 ```
 
 * Synchronized keywordidan foydalinib tepadagi methodini qayta yozing.
-* Synchronized method va blocklardan foydalanib dastur yozing.
 * Race condition ga misol yozing.
 * Race condition oldini olish uchun Synchronized keywordidan foydalanib tepadagi classga o'xshagan class yozing.
 * Race condition oldini olish uchun Lock lardan foydalanib tepadagi classga o'xshagan class yozing.
