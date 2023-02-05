@@ -50,6 +50,7 @@
 
 <details>
 <summary>Lesson 7 (Faker)</summary>
+
 * JavaFaker Library nima uchun ishlatiladi ?
 </details>
 
