@@ -364,7 +364,7 @@
             <summary>Lesson 10 (Logging)</summary>
             <ul>
                 <li>Logging nima ?</li>
-                <li>Logging tashlash bizga nima uchun kerak ?</li>
+                <li>Log tashlash bizga nima uchun kerak ?</li>
                 <li>Logging javani nechinchi versiyasida qo'shilgan ?</li>
                 <li>necha xil log level bor ?</li>
             </ul>
