@@ -99,7 +99,7 @@ public class Counter {
 * Har 1 minutda ekranga hozirgi vaqtni chiqaruvchi dastur yozing.
 * SimpleDateFormat classidan foydalanib Stringni Date parse qiladigan class yozing.
 * Time API foydalanib TODO app yozing va taskni vaqti yetib kelganda ekranga habar chiqarsin.
-![todo picture](https://github.com/jlkesh/pdp_online_java_lessons/tree/main/statics/img_1.png)
+![todo picture](statics/img_1.png)
 </details>
 
 <details>
