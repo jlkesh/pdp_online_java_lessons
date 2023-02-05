@@ -138,6 +138,7 @@
 
 * Tepada otilgan mavzulardan foydalangan holda bitta TODO app yasang to'liq. create, update, delete, list.
 
+
 </details>
 
 

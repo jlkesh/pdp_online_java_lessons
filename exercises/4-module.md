@@ -6,8 +6,8 @@
 * Thread classi orqali thread yarating.
 * Runnable interface orqali thread yarating
 * Thread va Runnable orqali yangi thread yaratib ularni nomini ekranga chiqazing.
-* Thread classni sleep() method ishlatgan holda dastur yozing.
-* Daemon thread yarating.
+* Runnable run() methodi ichida Thread classni sleep() method ishlatib threadni ishlating.
+* Daemon thread o'zinigiz yaratib ishlatib ko'ring.
 * Bir nechta threadlarni yarating va ularga 1-10 orlig'ida prioritylar bering.
 
 </details>
@@ -15,22 +15,93 @@
 <details>
 <summary>Lesson 2</summary>
 
+* Bitta Counter classini yozing. uni ichida bitta field bo'lsin type int va ichida qiymati bitta oshiruvchi bitta method
+  bo'lsin.
+
+```java
+public class Counter {
+
+    private int sum = 0;
+
+    public void counter() {
+        setSum(getSum() + 1);
+    }
+
+    // Standard getters and setters
+}
+```
+
+* Synchronized keywordidan foydalinib tepadagi methodini qayta yozing.
 * Synchronized method va blocklardan foydalanib dastur yozing.
 * Race condition ga misol yozing.
-* Race condition oldini olish uchun Synchronized keywordidan foydalanib dastur yozing.
-* Race condition oldini olish uchun Lock lardan foydalanib dastur yozing.
-* Race condition oldini olish uchun Volatile keywordidan foydalanib dastur yozing.
-* Deadlock ga tushuvchi dastur yozing.
+* Race condition oldini olish uchun Synchronized keywordidan foydalanib tepadagi classga o'xshagan class yozing.
+* Race condition oldini olish uchun Lock lardan foydalanib tepadagi classga o'xshagan class yozing.
+* Race condition oldini olish uchun Volatile keywordidan foydalanib tepadagi classga o'xshagan class yozing.
+* Deadlock ga tushuvchi class yozing. pastki kodga qarang.
+
+```java
+public class SyncThread implements Runnable {
+
+    private Object obj1;
+    private Object obj2;
+
+    public SyncThread(Object obj1, Object obj2) {
+        this.obj1 = obj1;
+        this.obj2 = obj2;
+    }
+
+    @Override
+    public void run() {
+        String name = Thread.currentThread().getName();
+        System.out.println(name + " acquiring lock on " + obj1);
+        synchronized (obj1) {
+            System.out.println(name + " acquiring lock on " + obj1);
+            work();
+            System.out.println(name + " acquiring lock on " + obj2);
+            synchronized (obj2) {
+                System.out.println(name + " acquiring lock on " + obj2);
+                work();
+            }
+            System.out.println(name + " released lock on " + obj2);
+        }
+        System.out.println(name + " released lock on " + obj1);
+        System.out.println(name + " finished execution.");
+
+    }
+
+    private void work() {
+        try {
+            Thread.sleep(30000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
 
 </details>
 
 <details>
 <summary>Lesson 3</summary>
 
-* Atomic classlarni ishlatib dastur yozing.
+* Race condition olidini olish uchun Atomic Classlardan foydalanib pastdagi codeni qayta yozing.
+
+```java
+public class Counter {
+
+    private int sum = 0;
+
+    public void counter() {
+        setSum(getSum() + 1);
+    }
+
+    // Standard getters and setters
+}
+```
+
 * Race condition olidini olish uchun Atomic Classlardan foydalanib dastur yozing.
 * Thread-safe collection ishlatgan holda dastur yozing.
-* ArrayList thread-safe qilib ushbu collectionda CRUD operastsiyalarni bajaradi dastur yozing.
+* ArrayList thread-safe qilib ushbu collectionni ustida CRUD operastsiyalarni bajaradi dastur yozing.
 * Immutable class yozing.
 
 </details>
@@ -38,12 +109,14 @@
 <details>
 <summary>Lesson 4</summary>
 
-* Istagan bitta Executordan foydalanib tasklarni execute qiladigan dastur yozing.
-* Runnable tasklarni alohida, Callable tasklarni alohida execute qiladigan dastur yozing.
-* Callable tasklarni execute qiladigan dastur yozing va Callabledan qaytgan resultni Future tekshiring agar bajarilggan
+* Istagan bitta Executordan foydalanib tasklarni execute qiladigan class yozing.
+* Runnable tasklarni alohida, Callable tasklarni alohida execute qiladigan methodlarni ham yozing.
+* Callable tasklarni execute qiladigan dastur yozing va Callabledan qaytgan resultni Future tekshiring agar bajarilgan
   bo'lsa ekranga chiqazing.
-* ThreadLocal classdan foydalanib kichik dastur yozing.
-* ThreadLocal foydalanib har bir userni alohida datalarni saqlaydigan dastur yozing.
+* Tepada yozgan Callable tasklarni execute qiladigan methodimiz overload qilib qayta yozing va Callabledan qaytgan
+  resultni Future tekshiring agar bajarilgan bo'lsa ekranga chiqazing
+* ThreadLocal foydalanib har bir userni alohida datalarni saqlaydigan class yozing. ThreadLocal classni methodlaridan
+  foydalaning
 
 </details>
 
@@ -52,17 +125,18 @@
 
 * Fork/Join dan foydalanib tasklarni execute qiladigan dastur yozing.
 * CompletableFuture foydalanib asynchron ishlaydigan dastur yozing.
-* Singleton Pattern foydalanib dastur yozing.
+* CompletableFuture foydalanib asynchron ishlaydigan calculator yozing.
+* Singleton Pattern mos keladigan class yozing.
 
 </details>
 
 <details>
 <summary>Lesson 6</summary>
 
-* Hozirgi vaqtni qaytradigan dastur yozing barcha Time API classlaridan foydalanib
+* Hozirgi vaqtni qaytradigan bir nechta methodlar yozing barcha Time API classlaridan foydalanib
 * String qabul qiladigan va LocalDate parse qilib LocalDate qaytaradigan dastur yozing.
 * Har 1 minutda ekranga hozirgi vaqtni chiqaruvchi dastur yozing.
-* SimpleDateFormat classidan foydalanib dastur yozing.
+* SimpleDateFormat classidan foydalanib Stringni Date parse qiladigan class yozing.
 * Time API foydalanib TODO app yozing va taskni vaqti yetib kelganda ekranga habar chiqarsin.
 
 </details>
@@ -70,14 +144,14 @@
 <details>
 <summary>Lesson 7</summary>
 
-* FileReader va FileWriter foydalanib filelar bilan ishlaydigan dastur yozing.
+* FileReader va FileWriter foydalanib filega yozadigan va o'qiydigan class yozing.
 * Object Serialize qilib filega yozing va uni deserialize qilib objectga aylantiring.
 * Huddi tepadagi ishni Externalizable bilan qiling.
 * transient keywordidan foydalanib serialization bo'ladigan objectni ba'zi fieldlarni qiymatni saqlamang.
-* BufferedReader va BufferedWriter foydalanib filelar bilan ishlaydigan dastur yozing.
-* FIle classidan foydalanib file yaratadigan dastur yozing. Hamda usha yaratilgan filega yozish hamda o'qish
+* BufferedReader va BufferedWriter foydalanib filega yozadigan va o'qiydigan class yozing.
+* File classidan foydalanib file yaratadigan class yozing. Hamda usha yaratilgan filega yozish hamda o'qish
   imkoni bo'lsin
-* Boshqa filedan textlarini o'qib yangi file yaratib usha filega yozing.
+* Boshqa filedan textlarini o'qib yangi file yaratib usha filega yozadigan class yozing.
 
 </details>
 
@@ -98,7 +172,7 @@
 <details>
 <summary>Lesson 10</summary>
 
-* Log tashladigan dastur yozing.
+* Tepadagi TODO appni ekranga log tashlaydigan qilib qayta yozing.
 
 </details>
 
