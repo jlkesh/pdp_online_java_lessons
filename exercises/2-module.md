@@ -1,194 +1,240 @@
 # Ikkinchi Modul uchun Mashqlar
 
 <details>
-    <summary>Lesson 1</summary>
-    Mashina classini yarating. Class ishida mashinaga xos xusiyatlari 
-    (field) va vazifalarini (method) yarating . Mashina classidan constructor orqali 10 ta object yarating.
+<summary>Lesson 1</summary>
+<ul>
+<details>
+<summary>1. Book Class - Oson</summary>
+
+* Kitob classini yarating
+* Nomi, Muallifi, SahifaSoni nomli fieldlari bo'lsin
+* Nom, muallifi, sahifaSoni malumotlarini chiqaruvchi
+  print method bo'lsin va ekranga malumotlar chiqarilsin
+
+</details>
+</ul>
+
+<ul>
+<details>
+<summary>2. Kalkulator class - Qiyin</summary>
+
+* Kalkulator classi yaratilsin
+* 2ta sonni saqlovchi first va second , belgi saqlovchi sign va natijani saqlochi result fieldi bo'lsin
+* calculate methodi bo'lsin . First va second methodi sign orqali qiymatlarni hisoblasin.
+  Masalan: signni qiymati ( + ) bo'ladigan bo'lsa first va secondni yi'gindisini resultga o'zlashtirsin;
+* Print methodi ham bo'lsin. Malumotlarni "first sign second = result" ko'rinishida chop etsin
+
+</details>
+</ul>
+
+<ul>
+<details>
+<summary>3. Todo Class - Juda Qiyin</summary>
+
+* Todo Classi yaratilsin
+* Nomi, tugash muddatini anglatuvchi day(kun),
+  bajarilgani yoki yo'qligini bildiradigan isComplete(bajarilganmi),
+  todo ni o'chirilgan yoki yo'qligini bildiruchi isDeleted(o'chirilganmi) nomli fieldlari bo'lsin.
+* done(bajarildi), deleted(o'chirildi) va malumotlarni "Nomi day isCompleted" ko'rinishida print nomli methodlari bo'
+  lsin.
+* objectlar massivda saqlansin va ochilmaganlarini consolega chizing.
+
+</details>
+</ul>
+
+### Pdp ning vazifalari
+
+1 - topshiriq Oson
+X va Y koordinatalarni ifodalovchi atributlari bor bo’lgan Point classini yozing.
+Koordinatalarni “(45, 56)” shaklda chop etuvchi printXY() methodini yozing.
+
+2 - topshiriq Oson
+To’g’ri burchakli uchburchak klassini yarating. Uning barcha atributlari va
+methodlariga mos nom va toifa tanlang. (Eni va bo’yi attributlari, Perimetrini
+va Yuzasini hisoblaydigan 2 ta methodi bo’lsin).
+
+3 - topshiriq Qiyin
+Ikkita atribut: firstAtribut va secondAttribut larga ega MyClass nomli klass
+yarating. Ushbu atributlar qiymatini aboutAttributes, yig’indisini sumAttributes,
+kattasini maxAttribute ekranga chiqazadigan methodlarini yarating.
+
+4 - topshiriq Qiyin
+Quyidagi 3ta attribute bor bo’lgan Date klassini yarating: yil, oy va kun.
+15.05.2020 formatdagi sanani chop etuvchi mehod yarating.
+
+5 - topshiriq Qiyin
+Quyidagi atributlari bor bo’lgan Student nomli klass yarating:
+familiya, ismi, guruh nomeri, o’qiydigan fanlari (5 ta fandan iborat massiv).
+O’qidigan fanlari ro’yxatini ekranga chiqazuvchi printSubjects nomli method yarating
+
 </details>
 
 <details>
-    <summary>Lesson 2</summary>
-    <b>package com.pdp.uz</b> packageda joylashgan 
-    Animal nomli class yarating. Va unda Encapsulationni taminlang .
-    5ta Telefon objectini yaratib methodlar oqrali consolega chiqaring.
+<summary>Lesson 2</summary>
+
+### Har bir topshiriq com.pdp.online.task.number o'ziga hos package yo'llarida yozilsin!
+
+Masalan: com.pdp.online.task.one.Rectangle, com.pdp.online.task.two.User
+<ul>
+<details>
+<summary>1. Rectangle(to'rtburchak) Class - Oson</summary>
+
+* Width, height va result fieldlari bo'lgan Rectangle classini encapsulation prinsipi asosida yarating
+* result ga to'rtburchakning yuzi hisoblanib o'zlashtiradigan calculate methodi bo'lsin
+* "width * height = reult" ko'rinishida consolega chop etilsin.
+
+</details>
+</ul>
+
+<ul>
+<details>
+<summary>2. User Class - Oson</summary>
+
+* Ism, Familya, PhoneNumber, Age va isMale fieldlari bo'lgan User classini encapsulation prinsipi asosida yarating
+* "Ismi: Familya Ism, yoshi: age, telefoni raqami: phoneNumber, Jinsi: isMale" ko'rinishida consolega chop etilsin.
+
+</details>
+</ul>
+
+<ul>
+<details>
+<summary>3. ClassRoom Class - Qiyin</summary>
+
+* roomNumber,teacherName,teacherPhoneNumber, studentName (bittadan ko'p bo'ladi) va studentCount
+  fieldlari bo'lgan ClassRoom classini encapsulation prinsipi asosida yarating
+* Malumotlar console orqali kiritilsin.
+* roomnumber, teacherNmae va studentlarini chop eting
+
+</details>
+</ul>
+
+<ul>
+<details>
+<summary>3. Pen Class - Juda Qiyin</summary>
+
+* miqdor,clicked va oneLetter fieldlari bo'lgan Pen Classi encapsulation prinsplariga asoslangan holda yaratilsin.
+* Miqdor -> ruchkani siyohi qanchaligi
+* Clicked -> ruchka bosilganmi yoki yo'q
+* OneLetter -> bitta harf uchun qancha siyoh ketishi
+* write methodi orqali ruchka yoshishni boshlasin. Katta harf yozilganda kichkina harfga qaraganda
+  2 barobar siyoh sarflasin, agarda bo'sh joy keladigan bo'lsa siyoh sarflanmasin. Agar siyoh tugasa ruchka yozishdan
+  to'xtasin va yozilgan text consolega chiqarilsin.
+
+</details>
+</ul>
+
+### Pdp ning vazifalari
+
+1.Oson
+Quyidagi 3ta attribute bor bo’lgan Time klassini encapsulation prinsipi asosida yarating: soat, minut, va sekund. “soat:
+minut:sekund” (Masalan: 01:25:08) formatdagi vaqtni qaytaruvchi mehod yarating.
+
+2.Qiyin
+Quyidagi attributlardan iborat Book klassini encapsulation prinsipi asosida yarating: nomi, avtorlari (bir nechta
+bo’lishi mumkin), ISBN(13 ta sondan iborat xalqaro kitob raqami, masalan 012345689112) va narxi.
+Kitob nomi va avtorlarini chop etuvchi method yarating.
+
+3.JudaQiyin
+write methodini ruchka kotta harfni yozganda kichik harfga qaraganda 2 marta ko'p siyoh sarflaydigan, probel (bo'sh joy)
+ni yozganda siyoh sarflanmaydigan va siyoh tugagan payt yozishdan to'xtaydigan qilib o'zgartirish
+
 </details>
 
 <details>
 <summary> Lesson 3 </summary>
 
-* 1.Mashq Quyidagi nima chiqadi
+<ul>
+<details>
+<summary>1.Topshiriq - Oson</summary>
 
-```java
-   public class P {
-    int a = 30;
-}
+<img src="../needed_sources/model2-lesson3-task1.png" alt="not found">
 
-public class Q extends P {
-    int a = 50;
-}
+Rasmbda berilgan struktura asosida classlarni yarating.
+</details>
+</ul>
 
-public class Test extends Q {
-    public static void main(String[] args) {
-        Q q = new Q();
-        System.out.println(" Value of a: " + q.a);
-        P p = new Q();
-        System.out.println("Value of a: " + p.a);
-    }
-  }
-  ```
+<ul>
+<details>
+<summary>2.Topshiriq - Juda Qiyin</summary>
 
-* 2.Mashq. Consolega nima chiqadi
+<img src="../needed_sources/model2-lesson3-task3.png" alt="not found">
 
-```java
-    public class Baseclass {
-    private int x = 30;
-    protected int y = 50;
+* Rasmbda berilgan struktura asosida classlarni yarating.
+* Bir necha Student objectlar dan tashkil topgan massiv yarating
+* Studentdan yangi object yarating va osha object massiv ichida teng bolgan
+  objectni topib, massiv ichidan topilgan Student objectini passwordini o'zgartiring.
+* Ozgartiryapganda oldPassword oldingi passwordga teng bo'lsa yangisini o'zlashtiring
 
-    private void m1() {
-        System.out.println("Base class m1 method");
-    }
+</details>
+</ul>
 
-    protected void m2() {
-        System.out.println("Base class m2 method");
-    }
-}
+### Pdp vaziafalari
 
-public class Derivedclass extends Baseclass {
+other topshiriq -
+Har qanday hayvonning oyoqlari(nectaligi) va rangi bor. Ayrim hayvonlarning sut emizuvchilik xususiyati mavjud, Uy
+havonining ismi(laqabi) bor. Qushlar ham hayvon bo’lib qanotining uzunligi bor va ular uchadigan yoki uchmaydigan
+bo’lishadi. Tuyaqush uchmaydigan qush va ko’rshapalak sut emizuvchi hisoblanadi.
+Hayvon (Animal) va uy hayvoni (Pet), qush(Bird), mushuk (Cat), it(Dog), sigir (Cow), Tuyaqush(Straus), Ko'rshapalak(
+Bat), burgut(Eagle)  klasslarini OOPning inheritance prinsiplari asosida yarating. Klasslarning voris olish sxemasini
+tuzing. main methodida harbir hayvondan 1 tadan object yarating.
 
-}
-
-public class MainClass {
-    public static void main(String[] args) {
-        Derivedclass d = new Derivedclass();
-        d.m2();
-        System.out.println("y = " + d.y);
-    }
-}
-  ```
-
-* 3.Mashq. Consolega nima chiqadi
-
-```java
-public class Calculation {
-    int calArea(int length, int breadth) {
-        return (length * breadth);
-    }
-}
-
-public class Rectangle {
-    Calculation cal; // Use of Aggregation.
-
-    int area(int length, int breadth) {
-        cal = new Calculation();
-        int areaRec = cal.calArea(length, breadth); // code reusability.
-        return areaRec;
-    }
-}
-
-public class Test {
-    public static void main(String[] args) {
-        Rectangle rec = new Rectangle();
-        int result = rec.area(25, 60);
-        System.out.println("Area of rectangle: " + result);
-
-    }
-}
-```
+<img src="../needed_sources/vazifa_4_1.png" alt="not found">
+<img src="../needed_sources/vazifa_4_2.png" alt="not found">
+<img src="../needed_sources/vazifa_4_3.png" alt="not found">
 
 </details>
 
 <details>
 <summary>Lesson 4</summary>
+<ul>
+<details>
+<summary>1.Topshiriq - Oson</summary>
 
-* 1.Mashq. Consolega nima chiqadi
+<p>Har xil shaklarning premetrini hisoblovchi methodlari bor bo'lgan 
+Figure classini polymorphismni overloading usulini qo’llagan holda yarating: </p>
 
-```java
-public class Lion {
-    public Lion() {
-        System.out.println("Lion constructor worked");
-    }
+* To'g'ri to'rtburchak(2 ta son beriladi)
+* Uchburchak (3 ta son beriladi)
+* Kvadrat (1 ta son beriladi)
+* BeshBurchak (5 ta son beriladi)
 
-    private void eat() {
-        System.out.println("Lion eats flesh");
-    }
+</details>
+</ul>
+<ul>
+<details>
+<summary>2.Topshiriq - Qiyin</summary>
 
-    static void live() {
-        System.out.println("Lion lives in Jungle");
-    }
+<p> Math classini o'zimiz polymorphism dan foydalanib yaratish. </br> 
+MyMath classini yarating. 2 ta sonni qoshuvchi methodlarni overloading qiling</p>
 
-    public static void main(String[] args) {
-        Lion l = new Lion();
-        l.eat();
-        Lion.live();
-    }
-}
-```
+* matn va sonni ni qo'shadigan
+* matn va double ni qo'shadigan
+* matn va matn ni qo'shadigan
+* son va sonni ni qo'shadigan
+* double va double ni qo'shadigan
+* double va sonni ni qo'shadigan
 
-* 2.Mashq. Overloading Consolega nima chiqadi
 
-```java
-public class A {
-}
+</details>
+</ul>
+<ul>
+<details>
+<summary>3.Topshiriq - Qiyin</summary>
 
-public class B extends A {
-}
+<p> Math classini o'zimiz polymorphism dan foydalanib yaratish. </br> 
+MyMath classini yarating. 2 ta sonni qoshuvchi methodlarni overloading qiling</p>
 
-public class C extends B {
-}
+* matn va sonni ni qo'shadigan
+* matn va double ni qo'shadigan
+* matn va matn ni qo'shadigan
+* son va sonni ni qo'shadigan
+* double va double ni qo'shadigan
+* double va sonni ni qo'shadigan
 
-public class OverLoadingScenarios {
-    void m1(A a) {
-        System.out.println(" I am in m1-A");
-    }
 
-    void m1(B b) {
-        System.out.println("I am in m1-B");
-    }
+</details>
+</ul>
 
-    void m1(C c) {
-        System.out.println("I am in m1-C");
-    }
-}
-
-public class OverLoadingTest {
-    public static void main(String[] args) {
-        OverLoadingScenarios obj = new OverLoadingScenarios();
-        A a = new A();
-        obj.m1(a);
-        B b = new B();
-        obj.m1(b);
-        C c = new C();
-        obj.m1(c);
-        B bc = new C();
-        obj.m1(bc);
-        A ab = new B();
-        obj.m1(ab);
-    }
-}
-```
-
-* 3.Mashq. Overriding Consolega nima chiqadi
-
-```java
-public class A {
-    protected void m1() {
-        System.out.println("m1-A");
-    }
-}
-
-public class B extends A {
-    public final void m1() {
-        System.out.println("m1-B");
-    }
-
-    public static void main(String[] args) {
-        B b = new B();
-        b.m1();
-        A a = new B();
-        a.m1();
-    }
-}
-```
 
 </details>
 
@@ -276,6 +322,7 @@ public class CubeTest {
 <summary>Lesson 6</summary>
 
 * 1.Mashq. Inner Class. Consolega nima chiqadi
+
 ```java
 public class A {
     class B {
@@ -303,12 +350,13 @@ public class A {
 public class Wrapping {
     public static void main(String[] args) {
         int a = 50;
-        Integer i = Integer.valueOf(a); 
+        Integer i = Integer.valueOf(a);
         Integer j = a;
         System.out.println(a + " " + i + " " + j);
     }
 }
 ```
+
 * 3.Mashq. Boxing. Consolega nima chiqadi
 
 ```java
@@ -331,12 +379,14 @@ public class Test {
     }
 }
 ```
+
 </details>
 
 <details>
 <summary>Lesson 8</summary>
 
 * 1.Mashq.Static and Instance Initializer Block. Consolega nima chiqadi
+
 ```java
 public class MultipleIIB {
     MultipleIIB() {
@@ -361,8 +411,9 @@ public class MultipleIIB {
     }
 }
 ```
+
 * Flower outer class yarating va sealed orqali Flower classiga tegishli qilaslar
-   voris ololadigan qilib cheklab qoying 
+  voris ololadigan qilib cheklab qoying
 
 
 * 2.Mashq. Non-access modifiers. Consolega nima chiqadi
@@ -371,11 +422,13 @@ public class MultipleIIB {
 
 class Page {
     static int count = 0;
+
     void myMethod() {
         count++;
         System.out.println(count);
     }
 }
+
 class GFG {
     public static void main(String[] args) {
         Page obj1 = new Page();
@@ -385,24 +438,27 @@ class GFG {
     }
 }
 ```
+
 * 3.Mashq. Non-access modifiers. Code muvaffaqiyat compile boladimi? Agar bo'lmasa xatoni toping.
 
 ```java
-class SuperClass{
-   final void myMethod(){
-      System.out.println("method of SuperClass");
-   }
+class SuperClass {
+    final void myMethod() {
+        System.out.println("method of SuperClass");
+    }
 }
-class SubClass extends SuperClass{
-   void myMethod(){
-      System.out.println("Overrides SuperClass");
-   }
+
+class SubClass extends SuperClass {
+    void myMethod() {
+        System.out.println("Overrides SuperClass");
+    }
 }
-class GFG{
-   public static void main(String[] args) {
-      SubClass obj=new SubClass();
-      obj.myMethod();
-   }
+
+class GFG {
+    public static void main(String[] args) {
+        SubClass obj = new SubClass();
+        obj.myMethod();
+    }
 }
 ```
 
@@ -415,14 +471,17 @@ class GFG{
 * Clothes nomli class yarating unda rangi va Size enumini ham saqlang
 * Class yaratyapganda asosiy qoidalariga etibor bering
 * Clothesdan object yaratib uni qiymatini saqlash uchun var keywordidan foyalaning
+
 </details>
 
 <details>
 <summary>Lesson 10</summary>
 
-* Dog class yarating nameini saqlovchi field bilam, va unda 2 ta object yaratib uni Objects classing equals methodi orqali tenglikka tekshiring
+* Dog class yarating nameini saqlovchi field bilam, va unda 2 ta object yaratib uni Objects classing equals methodi
+  orqali tenglikka tekshiring
 * Cat classni yarating UUID saqlovchi id,name fieldlari bilan, buni ham equals methodi orqali tekshiring
-* Undan oldin hamma objectni  requireNonNull method orqali tekshiring
+* Undan oldin hamma objectni requireNonNull method orqali tekshiring
 * Va har bir field,method,class va package ga documentation yozing va JavaDocni generate qiling
+
 </details>
 
