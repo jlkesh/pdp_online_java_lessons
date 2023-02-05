@@ -43,11 +43,10 @@
 </ul>
 
 </details>
-
 <details>
 <summary>Lesson 2</summary>
 
-### Har bir topshiriq com.pdp.online.task.number o'ziga hos package yo'llarida yozilsin!
+<h3> Har bir topshiriq com.pdp.online.task.number o'ziga hos package yo'llarida yozilsin!</h3>
 
 Masalan: com.pdp.online.task.one.Rectangle, com.pdp.online.task.two.User
 <ul>
@@ -60,7 +59,6 @@ Masalan: com.pdp.online.task.one.Rectangle, com.pdp.online.task.two.User
 
 </details>
 </ul>
-
 <ul>
 <details>
 <summary>2. User Class - Oson</summary>
@@ -70,7 +68,6 @@ Masalan: com.pdp.online.task.one.Rectangle, com.pdp.online.task.two.User
 
 </details>
 </ul>
-
 <ul>
 <details>
 <summary>3. ClassRoom Class - Qiyin</summary>
@@ -82,7 +79,6 @@ Masalan: com.pdp.online.task.one.Rectangle, com.pdp.online.task.two.User
 
 </details>
 </ul>
-
 <ul>
 <details>
 <summary>3. Pen Class - Juda Qiyin</summary>
@@ -97,12 +93,9 @@ Masalan: com.pdp.online.task.one.Rectangle, com.pdp.online.task.two.User
 
 </details>
 </ul>
-
 </details>
-
 <details>
 <summary> Lesson 3 </summary>
-
 <ul>
 <details>
 <summary>1.Topshiriq - Oson</summary>
@@ -112,7 +105,6 @@ Masalan: com.pdp.online.task.one.Rectangle, com.pdp.online.task.two.User
 Rasmbda berilgan struktura asosida classlarni yarating.
 </details>
 </ul>
-
 <ul>
 <details>
 <summary>2.Topshiriq - Juda Qiyin</summary>
@@ -127,8 +119,21 @@ Rasmbda berilgan struktura asosida classlarni yarating.
 
 </details>
 </ul>
-</details>
+<ul>
+<details>
+<summary>3.Topshiriq - Oson</summary>
 
+<img src="../needed_sources/model2-lesson3-task3.png" alt="not found">
+
+* Rasmbda berilgan struktura asosida classlarni yarating.
+* Bir necha Student objectlar dan tashkil topgan massiv yarating
+* Studentdan yangi object yarating va osha object massiv ichida teng bolgan
+  objectni topib, massiv ichidan topilgan Student objectini passwordini o'zgartiring.
+* Ozgartiryapganda oldPassword oldingi passwordga teng bo'lsa yangisini o'zlashtiring
+
+</details>
+</ul>
+</details>
 <details>
 <summary>Lesson 4</summary>
 <ul>
@@ -159,6 +164,82 @@ MyMath classini yarating. 2 ta sonni qoshuvchi methodlarni overloading qiling</p
 * double va double ni qo'shadigan
 * double va sonni ni qo'shadigan
 
+</details>
+</ul>
+<ul>
+<details>
+<summary>3.Topshiriq - Oson</summary>
+
+<img src="../needed_sources/243.png" alt="not found">
+<p>Rasmda berilgan struktura asosida klasslarni yarating. work() methodini overriding usulida amalga oshiring.</p>
+
+</details>
+</ul>
+<ul>
+<details>
+<summary>4.Topshiriq - Oson</summary>
+
+<img src="../needed_sources/244.png" alt="not found">
+<p>Rasmda berilgan struktura asosida klasslarni yarating. live() va eat() methodlarini overriding usulida amalga oshiring.</p>
+
+</details>
+</ul>
+</details>
+<details>
+<summary>Lesson 5</summary>
+<ul>
+<details>
+<summary>1.Topshiriq - Oson</summary>
+
+* Person abstract classini yarating undan, Student,Techaer,Parent classlari extend oladin;
+* Person classida name,phone,speak(),walk() methodlari bo'lsin;
+
+</details>
+</ul>
+
+<ul>
+<details>
+<summary>2.Topshiriq - Qiyin</summary>
+
+* Animal, Pet, Wild interfacelarini yarating;
+* Lion, Dog, Cat, Bird classlarini yarating;
+* Lion classi Animal va Wild interfacelaridan voris olsin;
+* Dog va Cat classlari Animal va Ped interfacelaridan voris olsin
+* Bird clasi esa faqat Animal interfacedan voris olsin
+
+</details>
+</ul>
+
+<ul>
+<details>
+<summary>3.Topshiriq - Qiyin</summary>
+
+* Texnika marker interfaceni yarating .
+* Texnika interfacedan ndan Vehicle and Equipment abstract classlari voris olsin .
+* Malibu, Spark classlari Vehicledan classidan voris olsin .
+* WashingMachine va Television classlari Equipmentdan voris olsin .
+
+</details>
+</ul>
+
+</details>
+
+<details>
+<summary>Lesson 6</summary>
+<ul>
+<details>
+<summary>1.Topshiriq - Oson</summary>
+
+* BigInteger classidan foydalanib kichkin calculator dasturini yasang .
+
+</details>
+</ul>
+<ul>
+<details>
+<summary>2.Topshiriq - Oson</summary>
+
+* BigDecimal classidan foydalanib kichkin pullarni valyuta boyicha almashtiradigan dastur yarating .
+* Qiymatlarni esa String wrapper classiga berib qiymatni uzunligi bilan ekranga chiqaring
 
 </details>
 </ul>
@@ -166,267 +247,82 @@ MyMath classini yarating. 2 ta sonni qoshuvchi methodlarni overloading qiling</p
 <details>
 <summary>3.Topshiriq - Qiyin</summary>
 
-<p> Math classini o'zimiz polymorphism dan foydalanib yaratish. </br> 
-MyMath classini yarating. 2 ta sonni qoshuvchi methodlarni overloading qiling</p>
-
-* matn va sonni ni qo'shadigan
-* matn va double ni qo'shadigan
-* matn va matn ni qo'shadigan
-* son va sonni ni qo'shadigan
-* double va double ni qo'shadigan
-* double va sonni ni qo'shadigan
-
+* Parent classini yarating uning ichida bitta static va static bo'lmagan inner sinf yarating.
+  Har bir inner class ichida bethod yaratib ularning ichida local inner class yarating
 
 </details>
 </ul>
-
-
-</details>
-
-<details>
-<summary>Lesson 5</summary>
-
-* 1.Mashq. Absraction. Consolega nima chiqadi
-
-```java
-public class VehicleTypes {
-    interface Vehicle {
-        public int getNoOfWheels();
-    }
-}
-
-public class Bus implements VehicleTypes.Vehicle {
-    public int getNoOfWheels() {
-        return 6;
-    }
-}
-
-public class Car implements VehicleTypes.Vehicle {
-    public int getNoOfWheels() {
-        return 4;
-    }
-}
-
-public class Bike implements VehicleTypes.Vehicle {
-    public int getNoOfWheels() {
-        return 2;
-    }
-}
-
-public class VehicleTest {
-    public static void main(String[] args) {
-        Bus b = new Bus();
-        System.out.println(b.getNoOfWheels());
-
-        Car c = new Car();
-        System.out.println(c.getNoOfWheels());
-
-        Bike bk = new Bike();
-        System.out.println(bk.getNoOfWheels());
-    }
-}
-```
-
-* 2.Mashq. Absraction. Consolega nima chiqadi
-
-```java
-public class Cube {
-    protected interface Number {
-        public void calculateCube(int n);
-    }
-}
-
-public class Five implements Cube.Number {
-    public void calculateCube(int n) {
-        int cubeN = n * n * n;
-        System.out.println("Cube of 5: " + cubeN);
-    }
-}
-
-public class Ten implements Cube.Number {
-    public void calculateCube(int n) {
-        int cubeN = n * n * n;
-        System.out.println("Cube of 10: " + cubeN);
-    }
-}
-
-public class CubeTest {
-    public static void main(String[] args) {
-        Five f = new Five();
-        f.calculateCube(5);
-
-        Ten t = new Ten();
-        t.calculateCube(10);
-    }
-}
-```
-
-</details>
-
-<details>
-<summary>Lesson 6</summary>
-
-* 1.Mashq. Inner Class. Consolega nima chiqadi
-
-```java
-public class A {
-    class B {
-        public void m1() {
-            System.out.println("Inner class method");
-        }
-    }
-
-    void m2() {
-        System.out.println("Outer class instance method");
-        B b = new B();
-        b.m1();
-    }
-
-    public static void main(String[] args) {
-        A a = new A();
-        a.m2();
-    }
-}
-```
-
-* 2.Mashq. Wrapper classes. Consolega nima chiqadi
-
-```java
-public class Wrapping {
-    public static void main(String[] args) {
-        int a = 50;
-        Integer i = Integer.valueOf(a);
-        Integer j = a;
-        System.out.println(a + " " + i + " " + j);
-    }
-}
-```
-
-* 3.Mashq. Boxing. Consolega nima chiqadi
-
-```java
-public class One {
-    void m1() {
-        System.out.println("m1 method in class One");
-    }
-}
-
-public class Two extends One {
-    void m1() {
-        System.out.println("m1 method in class Two");
-    }
-}
-
-public class Test {
-    public static void main(String[] args) {
-        One o = (One) new Two();
-        o.m1();
-    }
-}
-```
-
 </details>
 
 <details>
 <summary>Lesson 8</summary>
 
-* 1.Mashq.Static and Instance Initializer Block. Consolega nima chiqadi
+<ul>
+<details>
+<summary>1.Topshiriq - Oson</summary>
 
-```java
-public class MultipleIIB {
-    MultipleIIB() {
-        System.out.println("0-arg constructor");
-    }
+* Name,Author,PageCount,PriceBook fieldlari bo'lgan record classini yarating
+* Object yaratib har birini ekranga chiqaring
+* Object yaratilyapganda Compact constructorda berilgan qiymatlarni tekshiring
+* Name va Auther bo'sh textga yoki nullga teng bo'ladigan bo'lsa yoki pageCount 0 dan kichim bo'ladigan bo'lsa
+  xatolik haqida ekranga chiqarib keyin yaratilgan objectni chiqaring
 
-    MultipleIIB(int x) {
-        System.out.println("1-arg constructor");
-    }
+</details>
+</ul>
 
-    {
-        System.out.println(" First IIB");
-    }
+<ul>
+<details>
+<summary>2.Topshiriq - Oson</summary>
 
-    {
-        System.out.println("Second IIB");
-    }
+* regionName,DistrictName,homeNumber fieldlari bo'lgan Locatioin record classini yarating
+* Name,Phone fieldlari va Location record classi bo'lgan User classini yarating
+* Oldin ularga instance block orqali default qiymatlar bering Object yaratilganda qiymat berilmasa default qiymatni
+  oladigan qiling
+* va qiymatni ekranga chop eting
 
-    public static void main(String[] args) {
-        new MultipleIIB();
-        new MultipleIIB(5);
-    }
-}
-```
-
-* Flower outer class yarating va sealed orqali Flower classiga tegishli qilaslar
-  voris ololadigan qilib cheklab qoying
-
-
-* 2.Mashq. Non-access modifiers. Consolega nima chiqadi
-
-```java
-
-class Page {
-    static int count = 0;
-
-    void myMethod() {
-        count++;
-        System.out.println(count);
-    }
-}
-
-class GFG {
-    public static void main(String[] args) {
-        Page obj1 = new Page();
-        obj1.myMethod();
-        Page obj2 = new Page();
-        obj2.myMethod();
-    }
-}
-```
-
-* 3.Mashq. Non-access modifiers. Code muvaffaqiyat compile boladimi? Agar bo'lmasa xatoni toping.
-
-```java
-class SuperClass {
-    final void myMethod() {
-        System.out.println("method of SuperClass");
-    }
-}
-
-class SubClass extends SuperClass {
-    void myMethod() {
-        System.out.println("Overrides SuperClass");
-    }
-}
-
-class GFG {
-    public static void main(String[] args) {
-        SubClass obj = new SubClass();
-        obj.myMethod();
-    }
-}
-```
+</details>
+</ul>
 
 </details>
 
 <details>
 <summary>Lesson 9</summary>
 
-* O'lchamlarni saqlovchi Size nomli Enum classi yaratilsin.
+<ul>
+<details>
+<summary>1.Topshiriq - Qiyin</summary>
+
+* O'lchamlarni saqlovchi Size nomli Enum classi yarating unda S,M,X,XL qiymatlari bo'lsin.
+* Jinslarni saqlash uchun Gender Enumini yarating unda MALE,FEMALE qiymatlari bo'lsin
 * Clothes nomli class yarating unda rangi va Size enumini ham saqlang
 * Class yaratyapganda asosiy qoidalariga etibor bering
-* Clothesdan object yaratib uni qiymatini saqlash uchun var keywordidan foyalaning
+* Bir nechta Clothes classidan object yaratib ularni hammasini var keywordli o'zgaruvchilarga saqlang
+* Hammasini ekranga chop eting
+
+</details>
+</ul>
+
+<ul>
+<details>
+<summary>2.Topshiriq - Qiyin</summary>
+
+* Asosit logikalar yozish uchun Application classini yarating.
+* run() methodida hamma logikalar joylashtirilsin.
+* Bu classni ishlatish uchun Singleton design patternidan foydalaning
+* Buning uchun class ichida instance yaratuvchi va qaytaruvchi method yarating.
+* Phone classini yarating name,model enum classi va storage fieldlarini salvochi
+* Model enumida PHONE,SAMSUNG,REDMI qiymatlari bo'lsin
+* instance orqali run methodini ishga tushuring
+
+</details>
+</ul>
 
 </details>
 
 <details>
 <summary>Lesson 10</summary>
 
-* Dog class yarating nameini saqlovchi field bilam, va unda 2 ta object yaratib uni Objects classing equals methodi
-  orqali tenglikka tekshiring
-* Cat classni yarating UUID saqlovchi id,name fieldlari bilan, buni ham equals methodi orqali tekshiring
-* Undan oldin hamma objectni requireNonNull method orqali tekshiring
-* Va har bir field,method,class va package ga documentation yozing va JavaDocni generate qiling
+
 
 </details>
 
