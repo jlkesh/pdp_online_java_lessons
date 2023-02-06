@@ -322,6 +322,36 @@ MyMath classini yarating. 2 ta sonni qoshuvchi methodlarni overloading qiling</p
 <details>
 <summary>Lesson 10</summary>
 
+### Yakuniy Project
+### Juda Qiyin
+
+<img src="../needed_sources/2101.png">
+
+* Pasword va Userlarni saqlaydigan map yarating
+* User dan 1.kirish yoki 2.registeratsiya qilish tanlovlarini so'rang
+* Registratsiyani yani 2 ni bossa user malumotlarini to'ldirsin
+* user kiritgan password Map da bo'ladigan bo'lsa
+* InvalidPasswordExceptionni tashlang uni catching qilib message ni ekranga chiqaring
+* Agar user 1 ni kirishni bossa Systemega kiryapganda userni passwordini so'rang
+* shunaqa passwordli user mapdan topilsa agar topilmasa
+* DontHaveAccessExceptionni tashlaydigan
+* va u exceptionni tutib messageini ekranga print qiling
+* Questionlarni saqlovchi list bo'lsin
+* Systemaga muaffaqiyatli kirgan user Student yoki User bo'ladigan bo'lsa unga 2ta menu 1. Start, 2. Exit lar chiqsin
+* Question listini bir ma bir "questionText -> answer text" ko'rinishida chop eting.
+* Masalan :  2+2 = ? -> 1. 3 , 2. 5 , 3. 4,  4. 9
+  Agar user 1 ni tanlasa demak 3 javobini bergan bo'ladi
+* User tanlagan answerini anwer listdan toping va
+* QuesitionText va answer ni saqlaydigan userAnswers mapiga saqlab keting
+* Quiz oxirida userAnswers mapini "questionText siz tanlagan answer isCorrect" ko'rinishida ekranga chop eting
+* Har safar question chop etilganda userdan answerl
+* Agar systemaga kirgan Techer bo'ladigan bo'lsa quiz o'zgartirishlar kirita olsin yani
+  unga 1.Create Quiz, 2. Delete Quiz, 3. Update Quiz, 4. List Quiz, 5. Exit tanlovlari berilsin
+* 1 ni bosganda yangi question kirita olsin bir nechta natogri answer va togri answer bilan
+* 2 ni bosganda questionni o'chira olsin
+* 3 ni bosganda questionni update qila olsin
+* 4 ni bosganda question listidagi elementlarni forEach orqali ekranga chop etilsin
+* 5 ni bosganda systemadan chiqib ketsin.
 
 
 </details>
