@@ -288,6 +288,21 @@
 </details>
 <details>
 <summary>Lesson 10</summary>
+<ul>
+<details>
+<summary>1.Topshiriq - Oson</summary>
 
+* Uzbekcha englishcha so'zlardan map yarating uni propertiesga saqlang
+* keyin ekranga chop eting
 
+</details>
+</ul>
+<ul>
+<details>
+<summary>2.Topshiriq - Qiyin</summary>
+
+* 1 - topshiriq ga qoshimcha qilib lugatni i18n da foydalaning
+
+</details>
+</ul>
 </details>
