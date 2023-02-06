@@ -352,5 +352,6 @@ MyMath classini yarating. 2 ta sonni qoshuvchi methodlarni overloading qiling</p
 * 3 ni bosganda questionni update qila olsin
 * 4 ni bosganda question listidagi elementlarni forEach orqali ekranga chop etilsin
 * 5 ni bosganda systemadan chiqib ketsin.
+* Package, Class, method, fieldlarga doc yozing va javaDoc generate qiling  
 </details>
 
