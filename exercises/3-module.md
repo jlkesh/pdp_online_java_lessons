@@ -79,7 +79,7 @@
 <details>
 <summary>1.Topshiriq - Oson</summary>
 
-* sonlarni saqlovchi uzunligi 30 bo'lgan list yarating. va 100 gacha bo'lgan random sonlar 
+* sonlarni saqlovchi uzunligi 30 bo'lgan list yarating. va 100 gacha bo'lgan random sonlar
   bilan to'ldiring. Indexdan foydalangan holda listni qiymatlarini chizing
   Listning sizegacha bo'lgan random son orqali osha indexdagi elementni olib tashlansin
   va qayta chizing elementlarni
@@ -101,12 +101,11 @@
 <summary>3.Topshiriq - Juda Qiyin</summary>
 
 * Book classini yarating uni ichida book larni saqlovchi list1 va list2 listlarini yarating
-  list1 ni 10 book objectni bilan toldiring. list2 ni esa random son orqali list1dan tanlab olingan 
+  list1 ni 10 book objectni bilan toldiring. list2 ni esa random son orqali list1dan tanlab olingan
   5 ta element ni bering.
 * Ikkala listni ham ekranga chizing
 * list1 dan list2 da bor elementlarni ochirib tashlang
 * Qaytadan 2la listni ham qayta ekranga chiqaring
-
 
 </details>
 </ul>
@@ -119,7 +118,7 @@
 <details>
 <summary>1.Topshiriq - Oson</summary>
 
-* Ikkita LinkedList dan foydalanib list yarting. Birinchi listga 10 tacha, 
+* Ikkita LinkedList dan foydalanib list yarting. Birinchi listga 10 tacha,
   ikkinchisiga 5 tacha ism bilan to'diring.
 * birinchi listdagi elementlarni ikkinchi listga qoshing 15 ta element bo'ladi jami.
 * Ikkinchi listning firinchisiga va oxirgisiga o'z ismingizni qo'shing
@@ -129,7 +128,7 @@
 </ul>
 
 * 3 - darsdagi ArrayList bilan qilingan tasklarni LinkedList bilan qiling
-* 
+
 </details>
 <details>
 <summary>Lesson 5</summary>
@@ -173,7 +172,6 @@
 * birinchi sonni ochirib oxirga 100 snoni qoshing
 * elementlarni ekranga chop eting
 
-
 </details>
 </ul>
 <ul>
@@ -182,10 +180,9 @@
 
 * Name,Phone fieldlaridan iborat User larni saqlovchi PriorityQueue yaraqting
 * elementlarini ekranga chiqaring
-* peek() methodingi natijaini 
+* peek() methodingi natijaini
 * poll() methodini natijasini chiqaring
 * elementlarini ekranga chiqaring
-
 
 </details>
 </ul>
@@ -211,7 +208,7 @@
 * Uy raqamini va shu uyda yashaydigan Userlar listini saqlovchi map yarating
 * User classi name, phone, Role Enum fieldlaridan iborat
 * Role Enum classi -> GRANDPA, GRANDMA, FATHER, MOTHER ,CHILD qiymatlardan iborat
-* Mapni elementlarini "uy raqami va u uyda yashovchi odamlar" ko'rinishida ekranga chiqaring 
+* Mapni elementlarini "uy raqami va u uyda yashovchi odamlar" ko'rinishida ekranga chiqaring
 
 </details>
 </ul>
@@ -224,6 +221,87 @@
 * Uzbekcha so'z -> uning tarjimalari ko'rinishida elementlarni ekranga chizing
 * Consoldan uzbekcha so'z kiritilgandan map dan o'shani topib tarjimalarini yozadigan yoki
   englishcha so'z kiritilganda uzbekcha tarjimasini ekranga chiqaradigan method yozing.
+
+</details>
+</ul>
+</details>
+<details>
+<summary>Lesson 8</summary>
+<ul>
+<details>
+<summary>1.Topshiriq - Oson</summary>
+
+* Name, color, model fiieldlardan iborat Car clasini yarating
+* Car dan iborat list ham yarating
+* Iterator orqali ekranga chizing
+* ListIterator orqali ekranga chizing
+
+</details>
+</ul>
+<ul>
+<details>
+<summary>2.Topshiriq - Qiyin</summary>
+
+* User classi name, phone, Role Enum fieldlaridan iborat
+* Role Enum classi -> FATHER, MOTHER ,CHILD qiymatlardan iborat
+* 2 ta list yarating shallowCopies and deepCopies degan
+* shallowCopies ni user clasining shallow copy lari bilan to'ldiring
+* deepCopies ni user clasining deep copy lari bilan to'ldiring
+* ListIterator dan foydanalib 2 tomonlama aylanib elementlarni ekranga chizing
+
+</details>
+</ul>
+<ul>
+<details>
+<summary>3.Topshiriq - Juda Qiyin</summary>
+
+* Lug'at yaratish
+* Uzbekcha so'z va uning bir nechta englishcha tarjimalarini saqlaydigan list dan map yarating
+* Uzbekcha so'z -> uning tarjimalari ko'rinishida elementlarni ekranga chizing
+* Consoldan uzbekcha so'z kiritilgandan map dan o'shani topib tarjimalarini yozadigan yoki
+  englishcha so'z kiritilganda uzbekcha tarjimasini ekranga chiqaradigan method yozing.
+
+</details>
+</ul>
+</details>
+<details>
+<summary>Lesson 9</summary>
+<ul>
+<details>
+<summary>1.Topshiriq - Oson</summary>
+
+* Ismlardan iborat uzunligi yigirma bo'lgan massiv yarating
+* Uni Collection listiga o'giring va shuffle qiling
+* listni soritng qilib optionalga orab bervoring
+* optional bo'sh bo'lmasa optionaldan listni olib list elementlarini chop eting
+
+</details>
+</ul>
+<ul>
+<details>
+<summary>2.Topshiriq - Qiyin</summary>
+
+* SOLID ning har bir prinsibiga to'gri keladigan struktura misol sifatida yozing
+
+</details>
+</ul>
+</details>
+<details>
+<summary>Lesson 10</summary>
+<ul>
+<details>
+<summary>1.Topshiriq - Oson</summary>
+
+* Uzbekcha englishcha so'zlardan map yarating uni propertiesga saqlang
+* keyin ekranga chop eting
+
+</details>
+</ul>
+<ul>
+<details>
+<summary>2.Topshiriq - Qiyin</summary>
+
+* 1 - topshiriq ga qoshimcha qilib lugatni i18n da foydalaning
 
 </details>
 </ul>
