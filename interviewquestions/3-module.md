@@ -4,7 +4,7 @@
 <summary>Lesson 1</summary>
     <ul>
         <details>
-        <summary>1. Exceptions</summary>
+        <summary>1.1 Exceptions</summary>
             <ul>
                 <li>Exception nima ?</li>
                 <li>Nima sabli exceptionlar yuzaga keladi ?</li>
@@ -14,7 +14,7 @@
     </ul>
     <ul>
         <details>
-        <summary>2. Dealing with errors</summary>
+        <summary>1.2 Dealing with errors</summary>
             <ul>
                 <li>Hamma exception yoki errorlarning otasi yani superclass qaysi ?</li>
                 <li>Error nima va qachon yuzaga keladi?</li>
@@ -27,7 +27,7 @@
     </ul>
     <ul>
         <details>
-        <summary>3. Catching an Exception</summary>
+        <summary>1.3 Catching an Exception</summary>
             <ul>
                 <li>Exceptionni catching nima?</li>
                 <li>Exceptionlar qanday tutiladi ?</li>
@@ -44,7 +44,7 @@
     </ul>
     <ul>
         <details>
-        <summary>4. Tips for Using Exceptions</summary>
+        <summary>1.4 Tips for Using Exceptions</summary>
             <ul>
                 <li>Exceptionlardan foydalanish uchun qanday maslahatlar beriladi?</li>
             </ul>
@@ -56,19 +56,21 @@
 <summary>Lesson 2</summary>
     <ul>
         <details>
-        <summary>1. Generics</summary>
+        <summary>2.1 Generics</summary>
             <ul>
                 <li>Genericlar nima ?</li>
                 <li>Genericlarning foydali tomonlari ?</li>
-                <li>Genericlarni qayerlarda elon qila olamiz?</li>
+                <li>Genericlarni qayerlarda elon qila olamiz ?</li>
+                <li>Generic va Object o'rtasida nima farqi bor ?</li>
             </ul>
         </details>
     </ul>
     <ul>
         <details>
-        <summary>2. Bounds for Type Variables</summary>
+        <summary>2.2 Bounds for Type Variables</summary>
             <ul>
                 <li>Single Bounds nima ?</li>
+                <li>Bound Typelardan nima uchun foydalanamiz ?</li>
                 <li>Qanday Bounds turlari bor?</li>
                 <li>Multiple Bounds nima?</li> 
             </ul>
@@ -76,7 +78,7 @@
     </ul>
     <ul>
         <details>
-        <summary>3. Generic Code and the Virtual Machine</summary>
+        <summary>3.3 Generic Code and the Virtual Machine</summary>
             <ul>
                 <li>Type Erasure nima?</li>
                 <li>Type Erasure lar methodda ham sodir bo'ladimi ?</li>
@@ -88,7 +90,7 @@
     </ul>
     <ul>
         <details>
-        <summary>4. Restrictions and Limitations</summary>
+        <summary>3.4 Restrictions and Limitations</summary>
             <ul>
                 <li>Genericlarda qanday checklovlar mavjud ?</li>
             </ul>
@@ -96,7 +98,7 @@
     </ul>
     <ul>
         <details>
-        <summary>5. Inheritance Rules for Generic Types</summary>
+        <summary>3.5 Inheritance Rules for Generic Types</summary>
             <ul>
                 <li>Genericlardan qanday qoida bor vorisliklar bilan ishlaganda ?</li>
                 <li>Genericlarda SuperClass type da elan qilingan arrayga sub class arrayini ozlashtira olamizmi ?</li>
@@ -109,7 +111,7 @@
 <summary>Lesson 3</summary>
     <ul>
         <details>
-        <summary>1. Dynamic Array</summary>
+        <summary>3.1 Dynamic Array</summary>
             <ul>
                 <li>Arraylar bilan qanday muammo bor ?</li>
                 <li>Dynamic arraylarning qulay taraflari qanday?</li>
@@ -118,7 +120,7 @@
     </ul>
     <ul>
         <details>
-        <summary>2. Collections Framework</summary>
+        <summary>3.2 Collections Framework</summary>
             <ul>
                 <li>Collections Framework nima?</li>
                 <li>Collections Framework ning qulay taraflari qanday?</li>
@@ -135,9 +137,10 @@
     </ul>
     <ul>
         <details>
-        <summary>3. List Interface</summary>
+        <summary>3.3 List Interface</summary>
             <ul>
                 <li>List interface nima ?</li>
+                <li>List interface asosiy xususiyatlarni ayting ?</li>
                 <li>List interface ning foydali tomonlari nimada ?</li>
                 <li>List interfacening subclasslari qaysi ?</li>
             </ul>
@@ -145,7 +148,7 @@
     </ul>
     <ul>
         <details>
-        <summary>4. ArrayList</summary>
+        <summary>3.4 ArrayList</summary>
             <ul>
                 <li>ArrayList nima ?</li>
                 <li>ArrayList qaysi interfacedan voris olgan ?</li>
