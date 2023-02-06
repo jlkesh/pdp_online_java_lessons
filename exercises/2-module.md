@@ -322,7 +322,12 @@ MyMath classini yarating. 2 ta sonni qoshuvchi methodlarni overloading qiling</p
 <details>
 <summary>Lesson 10</summary>
 
-
+* Online Quiz. Online Quiz Dasturingizga register qilish orqali kira olishi kerak. Agar registratsiya qilingan bo'lsa
+  username va password orqali dasturga kirishimiz mumkin. User uchun 2ta menu 1. Start, 2. Exit. Start tanlasangiz quiz
+  count tanlaydi kiriting deb so'rasin. Agar u kiritgan count quizlar sonidan ko'p bo'lsa bor quizlar count
+  chiqarib 'boshlashga rozimisiz?' message chiqaring rozi bo'lsa oyinni boshlansin aks holda menuga qaytaring.
+  Admin quizlarni yaratadi, ochiradi, update qiladi va list ko'rishi mumkin. 1. Create Quiz, 2. Delete Quiz, 3. Update
+  Quiz, 4. List Quiz, 5. Exit
 
 </details>
 
