@@ -128,7 +128,6 @@
 </ul>
 
 * 3 - darsdagi ArrayList bilan qilingan tasklarni LinkedList bilan qiling
-*
 
 </details>
 <details>
