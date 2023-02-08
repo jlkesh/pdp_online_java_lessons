@@ -139,16 +139,20 @@
 * String literal xotirada qanday saqlanadi ?
 * Nima uchun Java String literaldan foydalanadi ?
 * Quyidagi code da nechta object yaratiladi ?
-    * ```java
-    String s = new String("Hello");    
-    ```
+
+```java
+String s = new String("Hello");    
+```
+
 * Quyidagi code da nechta object yaratiladi ?
-    * ```java
-    String s1 = new String("Scientech");
-    String s2 = new String("Scientech");
-    String s3 = "Scientech";
-    String s4 = "Scientech";
-    ``` 
+
+```java
+String s1 = new String("Scientech");
+String s2 = new String("Scientech");
+String s3 = "Scientech";
+String s4 = "Scientech";
+``` 
+
 * String class qanday interfacelardan implement olgan ?
 * String Thread-safe mi ?
 * String classni kamchiliklari ?
