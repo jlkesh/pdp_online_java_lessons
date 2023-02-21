@@ -105,7 +105,7 @@ class User {
 
 2. **Login Servlet yarating !**
     3. **LoginServlet** ning **doGet** methodida `/views/login.jsp` ga forward qiling.
-    4. `/views/login.jsp` da 👇👇👇 quyidagiday username ni kiritsin ! <form action="post"><label for="username">Username</label><input type="text" name="username" id="username" /><input type="submit"  value="login" /> <form>
+    4. `/views/login.jsp` da 👇👇👇 quyidagiday username ni kiritsin ! ![img](../needed_sources/loginform.png)
     5. Login button bosilganda 
 
 
