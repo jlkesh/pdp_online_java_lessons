@@ -34,8 +34,8 @@
 <summary style="font-size:40px;">Lesson 4</summary>
 
 1. Rasmlar Galeriyasi Dasturini Yarating
-    2. Rasm Yuklay Oling
-    3. Va Yuklangan Barcha Rasmlarni gallery.jsp file da ko'rsatib bering.
+    * Rasm Yuklay Oling
+    * Va Yuklangan Barcha Rasmlarni gallery.jsp file da ko'rsatib bering.
 
 ![gallery](../needed_sources/gallery.png)
 
@@ -50,12 +50,12 @@
 
 1. **Guruh** nomli class yarating va darsdagi book uchun qilingan **crud** kabi guruh ustida crud amalini bararuvchi
    dastur tuzing !
-    2. **Guruh** classida [_guruh nomi, guruh id, qachon yaratilganligi,talabalar soni_] kabi **field** lari
-       bo'n !
+    * **Guruh** classida [_guruh nomi, guruh id, qachon yaratilganligi,talabalar soni_] kabi **field** lari
+      bo'n !
 2. **Talaba** nomli class yarating va darsdagi book uchun qilingan **crud** kabi guruh ustida crud amalini bararuvchi
    dastur tuzing !
-    3. **Talaba** classida [_talaba id, qachon yaratilganligi,talabani toliq ismi , talabani yoshi, guruh id si(qaysi
-       guruhda o'qishligini ko'rsatib turishi uchun)_] kabi **field** lari bo'lsin !
+    * **Talaba** classida [_talaba id, qachon yaratilganligi,talabani toliq ismi , talabani yoshi, guruh id si(qaysi
+      guruhda o'qishligini ko'rsatib turishi uchun)_] kabi **field** lari bo'lsin !
 
 ## Masalan 👇👇👇👇
 
@@ -91,7 +91,7 @@ class Student {
 
 1. **User** nomli class yarating va darsdagi book uchun qilingan **crud** kabi guruh ustida crud amalini bararuvchi
    dastur tuzing !
-    2. **User** classida [_user id, username_] kabi **field** lari bo'lsin !
+    * **User** classida [_user id, username_] kabi **field** lari bo'lsin !
 
 # Masalan
 
@@ -104,9 +104,9 @@ class User {
 ````
 
 2. **Login Servlet yarating !**
-    3. **LoginServlet** ning **doGet** methodida `/views/login.jsp` ga forward qiling.
-    4. `/views/login.jsp` da 👇👇👇 quyidagiday username ni kiritsin ! ![img](../needed_sources/loginform.png)
-    5. Login button bosilganda 
+    * **LoginServlet** ning **doGet** methodida `/views/login.jsp` ga forward qiling.
+    * `/views/login.jsp` da 👇👇👇 quyidagiday username ni kiritsin ! ![img](../needed_sources/loginform.png)
+    * Login button bosilganda
 
 
 1. `5-darsning uyga vazifasidagi code lardan foydalaning` va guruh yaratiladigan servlet ga hamda student yaratiladigan
