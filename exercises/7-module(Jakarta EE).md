@@ -34,10 +34,10 @@
 <summary style="font-size:40px;">Lesson 4</summary>
 
 1. Rasmlar Galeriyasi Dasturini Yarating
-   2. Rasm Yuklay Oling
-   3. Va Yuklangan Barcha Rasmlarni gallery.jsp file da ko'rsatib bering.
+    2. Rasm Yuklay Oling
+    3. Va Yuklangan Barcha Rasmlarni gallery.jsp file da ko'rsatib bering.
 
-![gallery](../needed_sources/243.png)
+![gallery](../needed_sources/gallery.png)
 
 </details>
 
@@ -46,8 +46,72 @@
 <details>
 <summary style="font-size:40px;">Lesson 5</summary>
 
-1. **_Sonni_**  **Istalgan sanoq sistemasidan** (_2,8,10,16_) **Istalgan sanoq sistemasiga** (_2,8,10,16_) o'tkazadigan
-   dasturni JSP va Servlet lardan foydalangan xolda yarating !
+# WARNING (quyidagi topshiriqlarni bajarishda ma'lumotlarni database ga yozish uchun JDBC API dan foydalanib yozing)
+
+1. **Guruh** nomli class yarating va darsdagi book uchun qilingan **crud** kabi guruh ustida crud amalini bararuvchi
+   dastur tuzing !
+    2. **Guruh** classida [_guruh nomi, guruh id, qachon yaratilganligi,talabalar soni_] kabi **field** lari
+       bo'n !
+2. **Talaba** nomli class yarating va darsdagi book uchun qilingan **crud** kabi guruh ustida crud amalini bararuvchi
+   dastur tuzing !
+    3. **Talaba** classida [_talaba id, qachon yaratilganligi,talabani toliq ismi , talabani yoshi, guruh id si(qaysi
+       guruhda o'qishligini ko'rsatib turishi uchun)_] kabi **field** lari bo'lsin !
+
+## Masalan 👇👇👇👇
+
+````java
+import java.time.LocalDateTime;
+
+class Group {
+    private String id;
+    private String name;
+    private LocalDateTime createdAt;
+    private int studentCount;
+    // constructors, getters, setters
+}
+
+class Student {
+    private String id;
+    private String fullName;
+    private LocalDateTime createdAt;
+    private String groupID;
+    private int age;
+    // constructors, getters, setters
+}
+````
 
 </details>
 
+------
+
+<details>
+<summary style="font-size:40px;">Lesson 6</summary>
+
+# WARNING (quyidagi topshiriqlarni bajarishda ma'lumotlarni database ga yozish uchun JDBC API dan foydalanib yozing)
+
+1. **User** nomli class yarating va darsdagi book uchun qilingan **crud** kabi guruh ustida crud amalini bararuvchi
+   dastur tuzing !
+    2. **User** classida [_user id, username_] kabi **field** lari bo'lsin !
+
+# Masalan
+
+````java
+class User {
+    private String id;
+    private String username;
+    //constructors, getters, setters 
+} 
+````
+
+2. **Login Servlet yarating !**
+    3. **LoginServlet** ning **doGet** methodida `/views/login.jsp` ga forward qiling.
+    4. `/views/login.jsp` da 👇👇👇 quyidagiday username ni kiritsin ! <form action="post"><label for="username">Username</label><input type="text" name="username" id="username" /><input type="submit"  value="login" /> <form>
+    5. Login button bosilganda 
+
+
+1. `5-darsning uyga vazifasidagi code lardan foydalaning` va guruh yaratiladigan servlet ga hamda student yaratiladigan
+   servlet ga filter qo'ying, **Agar** session da user bo'lmasa login page redirect qiling
+
+</details>
+
+------
