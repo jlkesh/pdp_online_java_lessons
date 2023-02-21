@@ -46,7 +46,7 @@
 <details>
 <summary style="font-size:40px;">Lesson 5</summary>
 
-# WARNING (quyidagi topshiriqlarni bajarishda ma'lumotlarni database ga yozish uchun JDBC API dan foydalanib yozing)
+# OGOHLANTIRISH (quyidagi topshiriqlarni bajarishda ma'lumotlarni database ga yozish uchun JDBC API dan foydalanib yozing)
 
 1. **Guruh** nomli class yarating va darsdagi book uchun qilingan **crud** kabi guruh ustida crud amalini bararuvchi
    dastur tuzing !
@@ -87,31 +87,78 @@ class Student {
 <details>
 <summary style="font-size:40px;">Lesson 6</summary>
 
-# WARNING (quyidagi topshiriqlarni bajarishda ma'lumotlarni database ga yozish uchun JDBC API dan foydalanib yozing)
+# OGOHLANTIRISH (quyidagi topshiriqlarni bajarishda ma'lumotlarni database ga yozish uchun JDBC API dan foydalanib yozing)
 
 1. **User** nomli class yarating va darsdagi book uchun qilingan **crud** kabi guruh ustida crud amalini bararuvchi
    dastur tuzing !
     * **User** classida [_user id, username_] kabi **field** lari bo'lsin !
 
-# Masalan
+   # Masalan
 
-````java
-class User {
-    private String id;
-    private String username;
-    //constructors, getters, setters 
-} 
-````
+   ````java
+   class User {
+       private String id;
+       private String username;
+       //constructors, getters, setters 
+   } 
+   ````
 
 2. **Login Servlet yarating !**
     * **LoginServlet** ning **doGet** methodida `/views/login.jsp` ga forward qiling.
     * `/views/login.jsp` da 👇👇👇 quyidagiday username ni kiritsin ! ![img](../needed_sources/loginform.png)
-    * Login button bosilganda
+    * Login button bosilganda **LoginServlet** ning **doPost** methodiga request ketsin va o'sha yerda database dan
+      username orqali user topib **user id** session ga yozib qoyilsin.
 
-
-1. `5-darsning uyga vazifasidagi code lardan foydalaning` va guruh yaratiladigan servlet ga hamda student yaratiladigan
-   servlet ga filter qo'ying, **Agar** session da user bo'lmasa login page redirect qiling
+3. 5-darsning uyga vazifasidagi code lardan foydalaning va guruh yaratiladigan servlet ga hamda talaba yaratiladigan
+   servlet ga filter qo'ying, **Agar** session da **user id** bo'lmasa login page redirect qiling va u yerda login
+   qiling (**tepada o'zingiz yozgan login page ga**).
+4. 5-darsning uyga vazifasidagi Guruh va Talaba class lariga **createdBy**(kim tomonidan yaratilganligi) degan field
+   qo'shing va talaba yoki guruh yaratilayotgan payt **user_id** ni ushbu (talaba/guruh) objectlarning **createdBy**
+   degan fieldiga set qilib database yozing.
 
 </details>
 
 ------
+
+<details>
+<summary style="font-size:40px;">Lesson 7</summary>
+
+1. Lesson 5 dagi vazifalarni database bilan bo'ladigan aloqalarni JPQL dan foydalanib bajaring !
+
+</details>
+
+
+------
+
+<details>
+<summary style="font-size:40px;">Lesson 8</summary>
+
+1. ManyToMany Bo'glanish ga bitta misol yozing !
+2. Lesson 6 dagi barcha database bilan bo'ladigan aloqalarni JPQL dan foydalaning  !
+
+</details>
+
+------
+
+<details>
+<summary style="font-size:40px;">Lesson 9</summary>
+1. Lesson 6 dagi barcha database bilan bo'ladigan aloqalarda Jakarta Bean Validation dan foydalaning  !
+
+# masalan
+
+* Yangi talaba yaratayotgan paytingizda !
+* Talabani update qilayotgan paytingizda !
+* Yangi Guruh yaratayotgan paytingizda !
+* Guruhni update qilayotgan paytingizda !
+
+# OGOHLANTIRISH (Vazifalarni JPQL dan foydalanib bajaring)
+
+</details>
+
+
+<details>
+<summary style="font-size:40px;">Lesson 10</summary>
+1. Video da aytib ketilgan !
+</details>
+
+
