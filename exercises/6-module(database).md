@@ -75,5 +75,16 @@ Qandaydir table yarating unda **mail**, **phone**, **password** degan column lar
 </details>
 
 ------
+<details>
+<summary style="font-size:40px;">Lesson 6</summary>
+
+Qandaydir table yarating unda **mail**, **phone**, **password** degan column lari bo'lsin.
+* **mail** - strong mail check bo'lsin 
+* **phone** - `998 + 71, 87, 88, 90, 91, 93, 94, 99 + 7` ta raqamga tekshiradigan bo'lsin 
+* **password**  - xech bo'lmaganda 1 ta kichik harf, 1 ta katta harf, 1 ta kichik raqam va xech bo'lmaganda `@#$%*()` belgilardan 1 ta bo'lsin va uzunligi 8 ta dan uzun bo'lsin.
+
+</details>
+
+------
 
 
