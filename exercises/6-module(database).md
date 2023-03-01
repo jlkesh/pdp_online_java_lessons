@@ -87,4 +87,18 @@ Qandaydir table yarating unda **mail**, **phone**, **password** degan column lar
 
 ------
 
+<details>
+<summary style="font-size:40px;">Lesson 11(Project)</summary>
+
+1. darsdagi **auth_login** va **auth_register** dagi funksiyalarda boshqa barcha funksiyalardagi exceptionlar shu funksiyani chaqiruvchi user ni tilida chiqsin ?  
+2. **Vending Machine** ni **procedure** lar va **function** lar dan foydalanib yozing ?
+![vm](../needed_sources/vm.png)
+
+## WARNING - BU MASHQ UCHUN TALAB MAVJUD EMAS O'ZINGIZ IJOD QILISHINGIZ KERAK BO'LADI!!!! 
+
+</details>
+
+------
+
+
 
