@@ -1,4 +1,5 @@
-# Install Mongodb On Windows. [Full Documentation](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/)
+# Install Mongodb On Windows [here](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/)
+# Install Mongodb On Linux. [Full Documentation](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/)
 # 1. Import the public key used by the package management system.
 ```shell
 wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
