@@ -107,4 +107,17 @@
 * **SecurityContextHolder** klasi qanday klas ?
 * **@AuthenticationPrincipal** annotatsiyasini vazifasi nima ?
 
+# Lesson 8
+* **MultipartResolver**  nima  ?
+* **MessageSource** qanday **class** ?
+* **LocalResolver** **interface** ning vazifasi nima ?
+* **LocalChangeInterceptor** qanday **class** ?
 
+# Lesson 9
+
+* **Spring** da necha xil usulda xatoliklar bilan ishlash mumkin ?
+* **@ResponseStatus annotation** ni vazifasi nima ?
+* **@ControllerAdvice annotation** ni vazifasi nima ?
+* **@ExceptionHandler annotation** ni vazifasi nima ?
+* **Filter** nima ?
+* **Interceptor** nima ?
