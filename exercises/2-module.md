@@ -346,7 +346,7 @@ class Question {
 }
 class Answer{
     String answer; // javobi
-    boolean isCorrect; // shu javoni togrimi
+    boolean isCorrect; // shu javobi togrimi
 }
 ```
 
