@@ -327,24 +327,38 @@ MyMath classini yarating. 2 ta sonni qoshuvchi methodlarni overloading qiling</p
 
 <img src="../needed_sources/2101.png">
 
-* Pasword va Userlarni saqlaydigan map yarating
+* Pasword, user name  va roleni saqlaydigan 3 lik array yarating yani matrix - > String [][] list = new String [10][3];
+* role da Role Enumining qiymatlari saqlanadi Role{ STUDENT, TEACHER} enami.
+* 5 ta user qo'shing 
 * User dan 1.kirish yoki 2.registeratsiya qilish tanlovlarini so'rang
-* Registratsiyani yani 2 ni bossa user malumotlarini to'ldirsin
-* user kiritgan password Map da bo'ladigan bo'lsa
-* InvalidPasswordExceptionni tashlang uni catching qilib message ni ekranga chiqaring
-* Agar user 1 ni kirishni bossa Systemega kiryapganda userni passwordini so'rang
-* shunaqa passwordli user mapdan topilsa agar topilmasa
-* DontHaveAccessExceptionni tashlaydigan
-* va u exceptionni tutib messageini ekranga print qiling
-* Questionlarni saqlovchi list bo'lsin
-* Systemaga muaffaqiyatli kirgan user Student yoki User bo'ladigan bo'lsa unga 2ta menu 1. Start, 2. Exit lar chiqsin
-* Question listini bir ma bir "questionText -> answer text" ko'rinishida chop eting.
+* Registratsiyani yani 2 ni bossa user malumotlarini to'ldirsin default xolatda qoshilgan user STUDENT role i bilan qoshilsin
+* user kiritgan password va user name listda boladigan bolsa.
+* "User already exist" deb gan habardi consolega chop eting
+* Agar user 1 ni kirishni bossa Systemega kiryapganda userni password va user nameini so'rang
+* shunaqa password va usernameli user listda topilsa systemaga kirsin agar topilmasa
+* "User not found" degan habar chop etilsin
+* Questionlarni saqlovchi array bo'lsin -> Question[] questions = new Questions[10];
+* Question va Answer classlari
+```java
+class Question {
+  private String question; // savol
+  private Answer[] answers = new Answer[4];
+}
+class Answer{
+    String answer; // javobi
+    boolean isCorrect; // shu javoni togrimi
+}
+```
+
+* Systemaga muaffaqiyatli kirgan user ning role i Student yoki User bo'ladigan bo'lsa unga 2ta menu 1. Start, 2. Exit lar chiqsin
+* 2 bosilgan da sistemadan chiqib ketsin.
+* 1 ni bosganda quiz boshlansin.
+* Questions listidagi questionlar bir ma bir " Question classining question filedi -> answer arrayining hamma answer fieldlari" ko'rinishida chop eting.
 * Masalan :  2+2 = ? -> 1. 3 , 2. 5 , 3. 4,  4. 9
   Agar user 1 ni tanlasa demak 3 javobini bergan bo'ladi
-* User tanlagan answerini anwer listdan toping va
-* QuesitionText va answer ni saqlaydigan userAnswers mapiga saqlab keting
-* Quiz oxirida userAnswers mapini "questionText siz tanlagan answer isCorrect" ko'rinishida ekranga chop eting
-* Har safar question chop etilganda userdan answerl
+* User natijalarini saqlab ketuvchi String[][] userResult = new String [10][3]; massivni yarating
+* masalan userList[0] = {"2+2","1","false"}; korinishida bo'ladi
+* Quiz oxirida userResult listini "userResult[i][0] -> userResult[i][1] => userResult[i][1]" ko'rinishida ekranga chop eting
 * Agar systemaga kirgan Techer bo'ladigan bo'lsa quiz o'zgartirishlar kirita olsin yani
   unga 1.Create Quiz, 2. Delete Quiz, 3. Update Quiz, 4. List Quiz, 5. Exit tanlovlari berilsin
 * 1 ni bosganda yangi question kirita olsin bir nechta natogri answer va togri answer bilan
