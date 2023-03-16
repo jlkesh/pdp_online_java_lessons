@@ -120,3 +120,11 @@ _HTML kodlar_
 </html>
 
 </details>
+
+<details>
+<summary>Lesson 18</summary>
+
+1. Lesson 7 da qilgan **Seeder.jar** degan dasturingizni telegram botini qiling
+## WARNING JSON,SQL,CSV formatlarning hammasida ma'lumot yaratishning imkoni bo'lsin!!
+
+</details>
