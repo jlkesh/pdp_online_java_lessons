@@ -354,7 +354,7 @@ class Answer{
 * 2 bosilgan da sistemadan chiqib ketsin.
 * 1 ni bosganda quiz boshlansin.
 * Questions listidagi questionlar bir ma bir " Question classining question filedi -> answer arrayining hamma answer fieldlari" ko'rinishida chop eting.
-* Masalan :  2+2 = ? -> 1. 3 , 2. 5 , 3. 4,  4. 9
+* Masalan :  2+2 = ? -> 1. 3 , 2. 5 , 3. 4,  4. 9 
   Agar user 1 ni tanlasa demak 3 javobini bergan bo'ladi
 * User natijalarini saqlab ketuvchi String[][] userResult = new String [10][3]; massivni yarating
 * masalan userList[0] = {"2+2","1","false"}; korinishida bo'ladi
