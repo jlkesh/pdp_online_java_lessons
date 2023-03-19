@@ -63,7 +63,7 @@ yozing
 <details>
 <summary>Lesson 7(Spring Security)</summary>
 
-* Spring Security o'zingiz qayta yozing va endi username bilan emas email orqali kira oladigan qiling.
+* Spring Security o'zingiz qaytadan yozing va endi username bilan emas, email orqali kira oladigan qiling.
 * va Thymeleaf orqali login va register page yarating.
 
 </details>
@@ -83,7 +83,7 @@ yozing
 <summary>Lesson 9(Error Handling, Validation, Filter and Interceptor)</summary>
 
 * Blog yaratadigan dastur yozing.
-* Agar Blog toplimasa Error ushlanga va ekranga chiqazing.
+* Agar Blog toplimasa Error ni ushlang va ekranga 404 page chiqazing.
 * Blog Create qiloyotgan paytda validatorlar qo'shing. Agar fieldlardan biri valid bo'lmasa error tashlangan.
 * Errorlarni user tanlagan tilga qarab textlarni o'zgartiring.
 
