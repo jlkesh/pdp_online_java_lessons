@@ -21,19 +21,19 @@
 ------
 
 <details>
-<summary>Lesson 3(AOP)</summary>
+<summary>Lesson 3 (AOP)</summary>
 
-* Performance classini yarating va uni ichida perform() method yozing. AOP dan foydalanib Performance classni perform() 
-methodi chaqirilganda log tashlaydigan dastur yozing. xml based konfiguratsiya bilan!
-* Performance classini perform() methodida exception sodir bo'lganda Audience classini refund() method chaqiriladigan
-dastur yozing.
+* Transform nomli class yarating va uni ichida start() nomli method yozing va ushbu method chaqirilganda log
+tashlaydigan dastur yozing. XML Based konfiguratsiyadan foydalanib. 
+* Transform classni start() methodida exception sodir bo'lganda log tashlaydigan dastur yozing. Java Based
+konfiguratsiya bilan.
 
 </details>
 
 ------
 
 <details>
-<summary>Lesson 4(Spring MVC)</summary>
+<summary>Lesson 4 (Spring MVC)</summary>
 
 * Spring MVC dan foydalanib databasedan userlarni olib ekran chiqazuvchi dastur yozing.
 * Har bir userni to'liq ma'lumotlarni ko'rish uchun ham alohida pageda ko'rsatadigan API bo'lsin.
