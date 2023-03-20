@@ -1,9 +1,13 @@
 <details>
-<summary style="font-size:40px;">Lesson 1</summary>
+<summary>Lesson 1</summary>
 
-1. Rasmdagi page ni HTML,CSS dan foydalanib yarating !
-2. Yuqoridagi rasmdagi page ni HTML,BOOTSTRAP dan foydalanib yarating !
-3. HTML, CSS, JS dan foydalanib calculator yarating ?
+* Store va Item nomli classlarni yozing. Store Classida Item classni propertysi sifatida e'lon qiling. 
+* XML Based konfiguratsiya bilan tepada yozilgan 2ta classni beanga aylantiring. Company Bean c-namespace orqali 
+propertysini ishga tushiring. Item Bean p-namespace orqali propertylarni ishga tushiring.
+* Java Based konfiguratsiya bilan tepada yozilgan 2ta classni Beanga aylantiring. Ushbu Beanlarni propertylarni 
+postConstruct va preDestroy methodlari yordamida ishga tushiring.
+* Student nomli bean yarating va uni ichida subjectlarni **List** va har bitta fan va uni bahosini saqlaydigan **Map** 
+fieldlari bo'lsin.
 
 </details>
 
@@ -12,9 +16,22 @@
 <details>
 <summary>Lesson 2 (Bean, SpEL)</summary>
 
-* XML Based konfiguratsiyadan foydalanib bean yarating.
-* va ushbu bean-ni propertylarni SpEL orqali to'ldiring.
-* Huddi shu ishni Annotation Based konfiguratsiya orqali qiling.
+* XML Based konfiguratsiyadan foydalanib **Company** va **Address** nomli beanlarni yarating va ularda istalgan typedagi 
+propertylarni yozing.
+* va ushbu beanlarni propertylarga **SpEL** orqali value bering.
+* Huddi shu ishni ya'ni **SpEL** orqali propertylarga value berishini **Annotation** Based konfiguratsiya orqali qiling.
+pastda example bor.
+
+```java
+@Component
+public class SomethingBean {
+    
+    @Value("#{1 + 2}")
+    public int somethingValue;
+    
+    // ...
+}
+```
 
 </details>
 
