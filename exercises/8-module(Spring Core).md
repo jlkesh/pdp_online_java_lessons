@@ -1,7 +1,7 @@
 <details>
 <summary>Lesson 1 (Introduction)</summary>
 
-* Store va Item nomli classlarni yozing. Store Classida Item classni fieldi sifatida e'lon qiling. 
+* **Store** va **Item** nomli classlarni yozing. Store Classida Item classni fieldi sifatida e'lon qiling. 
 * XML Based konfiguratsiya bilan tepada yozilgan 2ta classni beanga aylantiring. Store beani c-namespace orqali 
 fieldlarini ishga tushiring. Item Bean p-namespace orqali fieldlarni ishga tushiring.
 * Java Based konfiguratsiya bilan tepada yozilgan 2ta classni beanga aylantiring. Ushbu Beanlarni fieldlarni 
