@@ -1,5 +1,5 @@
 <details>
-<summary>Lesson 1 (IoC Container, )</summary>
+<summary>Lesson 1 (Introduction)</summary>
 
 * Store va Item nomli classlarni yozing. Store Classida Item classni fieldi sifatida e'lon qiling. 
 * XML Based konfiguratsiya bilan tepada yozilgan 2ta classni beanga aylantiring. Store beani c-namespace orqali 
