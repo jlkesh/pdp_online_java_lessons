@@ -1,12 +1,12 @@
 <details>
-<summary>Lesson 1</summary>
+<summary>Lesson 1 (IoC Container, )</summary>
 
-* Store va Item nomli classlarni yozing. Store Classida Item classni propertysi sifatida e'lon qiling. 
-* XML Based konfiguratsiya bilan tepada yozilgan 2ta classni beanga aylantiring. Company Bean c-namespace orqali 
-propertysini ishga tushiring. Item Bean p-namespace orqali propertylarni ishga tushiring.
-* Java Based konfiguratsiya bilan tepada yozilgan 2ta classni Beanga aylantiring. Ushbu Beanlarni propertylarni 
+* Store va Item nomli classlarni yozing. Store Classida Item classni fieldi sifatida e'lon qiling. 
+* XML Based konfiguratsiya bilan tepada yozilgan 2ta classni beanga aylantiring. Store beani c-namespace orqali 
+fieldlarini ishga tushiring. Item Bean p-namespace orqali fieldlarni ishga tushiring.
+* Java Based konfiguratsiya bilan tepada yozilgan 2ta classni beanga aylantiring. Ushbu Beanlarni fieldlarni 
 postConstruct va preDestroy methodlari yordamida ishga tushiring.
-* Student nomli bean yarating va uni ichida subjectlarni **List** va har bitta fan va uni bahosini saqlaydigan **Map** 
+* Student nomli bean yarating va uni ichida fanlarni **List** va har bitta fan va uni bahosini saqlaydigan **Map** 
 fieldlari bo'lsin.
 
 </details>
@@ -14,11 +14,13 @@ fieldlari bo'lsin.
 ------
 
 <details>
-<summary>Lesson 2 (Bean, SpEL)</summary>
+<summary>Lesson 2 (Bean Scope, SpEL)</summary>
 
-* XML Based konfiguratsiyadan foydalanib **Company** va **Address** nomli beanlarni yarating va ularda istalgan typedagi 
-propertylarni yozing.
-* va ushbu beanlarni propertylarga **SpEL** orqali value bering.
+* XML Based konfiguratsiyadan foydalanib **City** nomli beani yarating va uni 3ta field bo'lsin `name`, `numberOfPeople`,
+`size` va ushbu bean scope ni prototype qiling.
+* va ushbu beanlarni fieldlarga **SpEL** orqali qiymat bering.
+* Tepada aytib o'tilgan 2ta **Company** va **Address** nomli beanlarni scopeni prototype qilib Java Based konfiguratsiya
+orqali yarating va ularni fieldlariga **@Value** annotatsiyasi orqali qiymat bering.
 * Huddi shu ishni ya'ni **SpEL** orqali propertylarga value berishini **Annotation** Based konfiguratsiya orqali qiling.
 pastda example bor.
 
