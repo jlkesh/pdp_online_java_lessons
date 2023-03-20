@@ -23,10 +23,10 @@
 <details>
 <summary>Lesson 3(AOP)</summary>
 
-* AOP dan foydalanib Repository, Service va Controller annotatsiyasi qo'yilgan beanlarni ichidagi istalgan method
-chaqirilganda log tashlaydigan dastur yozing.
-* Tepadagi ishni teskarisi beanlarni ichidagi methodlardan birida exception sodir bo'lganda log tashlaydigan method 
-yozing
+* Performance classini yarating va uni ichida perform() method yozing. AOP dan foydalanib Performance classni perform() 
+methodi chaqirilganda log tashlaydigan dastur yozing. xml based konfiguratsiya bilan!
+* Performance classini perform() methodida exception sodir bo'lganda Audience classini refund() method chaqiriladigan
+dastur yozing.
 
 </details>
 
