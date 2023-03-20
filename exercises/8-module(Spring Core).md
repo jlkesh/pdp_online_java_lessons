@@ -25,10 +25,10 @@
 
 * Transform nomli class yarating va uni ichida 1..10 gacha bo'lgan sonlarni ekranga chiqaruvchi start() nomli method 
 yozing va ushbu method chaqirilganda method bajarilishidan oldin va keyin log tashlaydigan dastur yozing. XML Based 
-konfiguratsiyadan foydalanib, Before, After va AfterRetruning Advicelaridan ham foydalaning.
+konfiguratsiyadan foydalanib, **Before**, **After** va **AfterReturning** **Advice** laridan ham foydalaning.
 * Transform classni start method chaqirilganda endi exception sodir bo'lsa log tashlaydigan dastur yozing. Java Based
-konfiguratsiyadan foydalanib. TransfromAspect classida barcha Advicelarni (@Before, @After, @AfterReturning va 
-@AfterThrowing) yozing.
+konfiguratsiyadan foydalanib. **TransformAspect** classida barcha Advicelarni (**@Before**, **@After**, **@AfterReturning** va 
+**@AfterThrowing**) yozing.
 
 ```java
 @Aspect
