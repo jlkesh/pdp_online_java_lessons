@@ -36,7 +36,7 @@
             <ul>
                 <li>Threadni life cycleni tushintirib bering ?</li>
                 <li>sleep() va wait() methodlari o'rtasidagi farq ?</li>
-                <li>Threadning state qachon RUNING o'zgaradi ?</li>
+                <li>Threadning state qachon RUNNABLE o'zgaradi ?</li>
                 <li>Threadning state qachon DEAD o'zgaradi ?</li>
                 <li>Thread o'chirishimiz mumkinmi ? bo'lsa qanday ?</li>
             </ul>
