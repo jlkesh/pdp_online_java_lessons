@@ -119,20 +119,6 @@ Rasmbda berilgan struktura asosida classlarni yarating.
 
 </details>
 </ul>
-<ul>
-<details>
-<summary>3.Topshiriq - Oson</summary>
-
-<img src="../needed_sources/model2-lesson3-task3.png" alt="not found">
-
-* Rasmbda berilgan struktura asosida classlarni yarating.
-* Bir necha Student objectlar dan tashkil topgan massiv yarating
-* Studentdan yangi object yarating va osha object massiv ichida teng bolgan
-  objectni topib, massiv ichidan topilgan Student objectini passwordini o'zgartiring.
-* Ozgartiryapganda oldPassword oldingi passwordga teng bo'lsa yangisini o'zlashtiring
-
-</details>
-</ul>
 </details>
 <details>
 <summary>Lesson 4</summary>
