@@ -167,7 +167,9 @@ class Todo {
 <summary>Lesson 10( Project )</summary>
 
 **Weather Service**. Ob havo ma'lumotlarni beruvchi dastur yozing. Ushbu dasturda **Admin** va **User** 
-alohida API lar bo'ladi. 
+alohida API lar bo'ladi. Ob havo ma'lumotlarni Adminlari tomonidan yaratiladi va databaseda saqlanadi, so'ralganda 
+databasedan olib keladi. Hech qanday API dan olib kelinmaydi.
+
 
 * Admin API
   * `User List` - barcha userlarni list olishi mumkin
