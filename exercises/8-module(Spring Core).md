@@ -42,6 +42,7 @@ public class SomethingBean {
 </details>
 
 
+
 ------
 
 <details>
@@ -88,7 +89,7 @@ public class TransformAspect {
 * **Todo Application** yarating.
 
 ```java 
-    import java.time.LocalDateTime;
+import java.time.LocalDateTime;
 
 class Todo {
     private Integer id;
@@ -165,8 +166,23 @@ class Todo {
 <details>
 <summary>Lesson 10( Project )</summary>
 
-* Lesson 8
+**Weather Service**. Ob havo ma'lumotlarni beruvchi dastur yozing. Ushbu dasturda **Admin** va **User** 
+alohida API lar bo'ladi. 
 
+* Admin API
+  * `User List` - barcha userlarni list olishi mumkin
+  * `User Detail` - user qaysi citylarga subscribe bo'lgani ro'yxatni va userga tegishli ma'lumotlarni olishi mumkin.
+  * `User Edit` - user edit qilishi ham mumkin.
+  * `Cities List` - Citylarni list olishi ham mumkin.
+  * `Edit City` - City edit qila olishi ham mumkin.
+  * `Add City` - City qo'sha olishi ham mumkin.
+* User API
+  * `Register` - user registeratsiya qilib keyin API foydalana olishi kerak.
+  * `Login` - username va password orqali login qiladi.
+  * `Cities List` - City larni list olishi mumkin.
+  * `Subscribe To City` - City subscribe qila olishi mumkin.
+  * `Get Subscriptions` - Subscribe bo'lgan Citylarni ob havo ma'lumotlarni olishi mumkin.
+  1 kunlik, 1 haftalik va 1 oylik
 </details>
 
 ------
