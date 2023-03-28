@@ -167,9 +167,8 @@ class Todo {
 <summary>Lesson 10( Project )</summary>
 
 **Weather Service**. Ob havo ma'lumotlarni beruvchi dastur yozing. Ushbu dasturda **Admin** va **User** 
-alohida API lar bo'ladi. Ob havo ma'lumotlarni Adminlari tomonidan yaratiladi va databaseda saqlanadi, so'ralganda 
+alohida API lar bo'ladi. Ob havo ma'lumotlarni **Admin**lari tomonidan yaratiladi va databaseda saqlanadi, so'ralganda 
 databasedan olib keladi. Hech qanday API dan olib kelinmaydi.
-
 
 * Admin API
   * `User List` - barcha userlarni list olishi mumkin
@@ -183,7 +182,7 @@ databasedan olib keladi. Hech qanday API dan olib kelinmaydi.
   * `Login` - username va password orqali login qiladi.
   * `Cities List` - City larni list olishi mumkin.
   * `Subscribe To City` - City subscribe qila olishi mumkin.
-  * `Get Subscriptions` - Subscribe bo'lgan Citylarni ob havo ma'lumotlarni olishi mumkin.
+  * `Get Subscriptions` - Subscribe bo'lgan Citylarni faqat ob havo ma'lumotlarni olishi mumkin.
   1 kunlik, 1 haftalik va 1 oylik
 </details>
 
