@@ -38,7 +38,6 @@ public class SwaggerConfig {
 
     @Bean
     public OpenAPI springOpenAPI() {
-        final String securitySchemeName = "bearerAuth";
         return new OpenAPI()
                 .info(new Info()
                         .title("Spring 6 Swagger 2 Annotation Example")
@@ -61,10 +60,10 @@ public class SwaggerConfig {
                                 .description("Production")
                 ))
                 .addSecurityItem(new SecurityRequirement()
-                        .addList(securitySchemeName))
+                        .addList("bearerAuth"))
                 .components(new Components()
-                        .addSecuritySchemes(securitySchemeName, new SecurityScheme()
-                                .name(securitySchemeName)
+                        .addSecuritySchemes("bearerAuth", new SecurityScheme()
+                                .name("bearerAuth")
                                 .type(SecurityScheme.Type.HTTP)
                                 .scheme("bearer")
                                 .bearerFormat("JWT")));
@@ -90,6 +89,35 @@ public class SwaggerConfig {
 * `@Schema`
 * `@Operation(summary = "foo", description = "bar")`
 * `@ApiResponse(responseCode = "404", description = "foo")`
+
+# Example
+
+````java
+@Tag(name = "Store APIs", description = "It is a long established fact that a reader")
+````
+
+````java
+ @Operation(summary = "Create New Store", description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry")
+@ApiResponses(value = {
+        @ApiResponse(responseCode = "201", description = "Successfully Created", content = {
+                @Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
+                        schema = @Schema(implementation = Store.class))
+        }),
+        @ApiResponse(responseCode = "400", description = "Bad Request", content = {
+                @Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
+                        schema = @Schema(implementation = RuntimeException.class))
+        }),
+        @ApiResponse(responseCode = "500", description = "Internal Server Error", content = {
+                @Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
+                        schema = @Schema(implementation = RuntimeException.class))
+        })
+})
+
+````java
+@Schema(name = "Store", description = "Store Entity")
+````
+
+````
 
 # Yaml Configuration
 
@@ -529,11 +557,23 @@ components:
 ````java
 ...
         .components(new Components()
-        .addSecuritySchemes(securitySchemeName,new SecurityScheme()
-        .name(securitySchemeName)
+        .addSecuritySchemes("bearerAuth",new SecurityScheme()
+        .name("bearerAuth")
         .type(SecurityScheme.Type.HTTP)
         .scheme("bearer")
         .bearerFormat("JWT")));
+        ... 
+````
+
+# Security Support (HTTP Basic) With Java Config
+
+````java
+...
+        .components(new Components()
+        .addSecuritySchemes("basicAuth",new SecurityScheme()
+        .name("basicAuth")
+        .type(SecurityScheme.Type.HTTP)
+        .scheme("basic")));
         ... 
 ````
 
@@ -545,6 +585,16 @@ components:
         type = SecuritySchemeType.HTTP,
         bearerFormat = "JWT",
         scheme = "bearer"
+)
+````
+
+# Security Support (HTTP Basic) With Annotation
+
+````java
+@SecurityScheme(
+        name = "basicAuth",
+        type = SecuritySchemeType.HTTP,
+        scheme = "basic"
 )
 ````
 
