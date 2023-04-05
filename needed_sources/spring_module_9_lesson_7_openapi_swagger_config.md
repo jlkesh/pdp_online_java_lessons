@@ -112,12 +112,12 @@ public class SwaggerConfig {
                         schema = @Schema(implementation = RuntimeException.class))
         })
 })
+````
 
 ````java
 @Schema(name = "Store", description = "Store Entity")
 ````
 
-````
 
 # Yaml Configuration
 
@@ -547,6 +547,13 @@ components:
     }
   }
 }
+````
+
+# Enabling YAML OR JSON
+
+````properties
+springdoc.swagger-ui.config-url=/swagger-url.json
+springdoc.paths-to-match=/store/**, /config/**
 ````
 
 <details>
