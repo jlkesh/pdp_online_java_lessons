@@ -19,11 +19,7 @@ public class Comment {
     private String body;
 }
 ````
-
-````java
-public interface CommentRepository extends JpaRepository<Comment, Integer> {
-}
-````
+ 
 
 ````java
 
