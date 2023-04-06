@@ -1,3 +1,194 @@
+# Example Code
+
+## Comment
+
+````java
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+public class Comment {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private Integer postId;
+    private String name;
+    private String email;
+    private String body;
+}
+````
+
+````java
+public interface CommentRepository extends JpaRepository<Comment, Integer> {
+}
+````
+
+````java
+
+@RestController
+@RequestMapping("/api/comment")
+public class CommentController {
+    private final CommentRepository commentRepository;
+
+    public CommentController(CommentRepository commentRepository) {
+        this.commentRepository = commentRepository;
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Comment> getComment(@PathVariable Integer id) {
+        Comment comment = commentRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Comment Not Found With ID: " + id));
+        return ResponseEntity.ok(comment);
+    }
+
+    @GetMapping("/")
+    public ResponseEntity<List<Comment>> getAllComment() {
+        List<Comment> comments = commentRepository.findAll();
+        return ResponseEntity.ok(comments);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteComment(@PathVariable Integer id) {
+        Comment comment = commentRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Comment Not Found With ID: " + id));
+        commentRepository.delete(comment);
+        return ResponseEntity.notFound().build();
+    }
+
+    @PostMapping("/")
+    public ResponseEntity<Comment> saveComment(@RequestBody Comment comment) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(commentRepository.save(comment));
+    }
+}
+````
+
+## Post
+
+````java
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+public class Post {
+    private Integer id;
+    private Integer userId;
+    private String title;
+    private String body;
+}
+````
+
+````java
+
+@RestController
+@RequestMapping("/api/posts")
+public class PostController {
+    private final PostRepository postRepository;
+
+    public PostController(PostRepository postRepository) {
+        this.postRepository = postRepository;
+    }
+
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Post> getPost(@PathVariable Integer id) {
+        Post comment = postRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Post Not Found With ID: " + id));
+        return ResponseEntity.ok(comment);
+    }
+
+    @GetMapping("/")
+    public ResponseEntity<List<Post>> getAllPost() {
+        List<Post> comments = postRepository.findAll();
+        return ResponseEntity.ok(comments);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deletePost(@PathVariable Integer id) {
+        Post comment = postRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Post Not Found With ID: " + id));
+        postRepository.delete(comment);
+        return ResponseEntity.notFound().build();
+    }
+
+    @PostMapping("/")
+    public ResponseEntity<Post> savePost(@RequestBody Post comment) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(postRepository.save(comment));
+    }
+}
+````
+
+## Todo
+
+````java
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+public class Todo {
+    private Integer id;
+    private Integer userId;
+    private String title;
+    private boolean completed;
+}
+````
+
+````java
+
+@RestController
+@RequestMapping("/api/todo")
+public class PostController {
+    private final TodoRepository todoRepository;
+
+    public PostController(TodoRepository todoRepository) {
+        this.todoRepository = todoRepository;
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Todo> getTodo(@PathVariable Integer id) {
+        Todo todo = todoRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Todo Not Found With ID: " + id));
+        return ResponseEntity.ok(todo);
+    }
+
+    @GetMapping("/")
+    public ResponseEntity<List<Todo>> getAllTodo() {
+        List<Todo> todos = todoRepository.findAll();
+        return ResponseEntity.ok(todos);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteTodo(@PathVariable Integer id) {
+        Todo todo = todoRepository.findById(id)
+                .orElseThrow(() -> new EntityNotFoundException("Todo Not Found With ID: " + id));
+        todoRepository.delete(todo);
+        return ResponseEntity.notFound().build();
+    }
+
+    @PostMapping("/")
+    public ResponseEntity<Todo> saveTodo(@RequestBody Todo todo) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(todoRepository.save(todo));
+    }
+}
+````
+
+````
+https://jsonplaceholder.typicode.com/todos
+````
+
+````
+https://jsonplaceholder.typicode.com/posts
+````
+
+````
+https://jsonplaceholder.typicode.com/comments
+````
+
 # OpenAPI Configuration with Annotation Config
 
 ````java
@@ -9,7 +200,8 @@
                         name = "Elmurodov Javohir", email = "john.lgd65@gmail.com", url = "https://github.com/jlkesh"
                 ),
                 license = @License(
-                        name = "Apache 2.0", url = "https://springdoc.org"),
+                        name = "Apache 2.0",
+                        url = "https://springdoc.org"),
                 termsOfService = "http://swagger.io/terms/",
                 description = "Spring 6 Swagger Simple Application"
         ),
@@ -58,23 +250,7 @@ public class SwaggerConfig {
                         new Server()
                                 .url("http://localhost:8080")
                                 .description("Production")
-                ))
-                .addSecurityItem(new SecurityRequirement()
-                        .addList("bearerAuth"))
-                .components(new Components()
-                        .addSecuritySchemes("bearerAuth", new SecurityScheme()
-                                .name("bearerAuth")
-                                .type(SecurityScheme.Type.HTTP)
-                                .scheme("bearer")
-                                .bearerFormat("JWT")));
-    }
-
-    @Bean
-    public GroupedOpenApi annotationGroupAPI() {
-        return GroupedOpenApi.builder()
-                .group("annotation")
-                .pathsToMatch("/store/**", "/config/**")
-                .build();
+                ));
     }
 }
 ````
@@ -85,475 +261,17 @@ public class SwaggerConfig {
 * `@Parameter`
 * `@Hidden`
 * `@Schema`
-* `@Schema(accessMode = READ_ONLY)`
-* `@Schema`
-* `@Operation(summary = "foo", description = "bar")`
-* `@ApiResponse(responseCode = "404", description = "foo")`
-
-# Example
+* `@Operation`
+* `@ApiResponse`
 
 ````java
-@Tag(name = "Store APIs", description = "It is a long established fact that a reader")
-````
-
-````java
- @Operation(summary = "Create New Store", description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry")
+@Operation(summary = "Create New Store", description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry")
 @ApiResponses(value = {
-        @ApiResponse(responseCode = "201", description = "Successfully Created", content = {
-                @Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
-                        schema = @Schema(implementation = Store.class))
-        }),
         @ApiResponse(responseCode = "400", description = "Bad Request", content = {
-                @Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
-                        schema = @Schema(implementation = RuntimeException.class))
-        }),
-        @ApiResponse(responseCode = "500", description = "Internal Server Error", content = {
                 @Content(mediaType = MediaType.APPLICATION_JSON_VALUE,
                         schema = @Schema(implementation = RuntimeException.class))
         })
 })
-````
-
-````java
-@Schema(name = "Store", description = "Store Entity")
-````
-
-
-# Yaml Configuration
-
-````yaml
-openapi: 3.0.2
-info:
-  title: Spring 6 Swagger 2 YAML Example
-  description: Spring 6 Swagger Simple Application
-  termsOfService: http://swagger.io/terms/
-  contact:
-    email: apiteam@swagger.io
-  license:
-    name: Apache 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0.html
-  version: 1.0.4
-externalDocs:
-  description: Find out more about Swagger
-  url: http://swagger.io
-servers:
-  - url: http://localhost:8080
-    description: Production Service
-  - url: http://localhost:9090
-    description: Test Service
-tags:
-  - name: Category
-    description: Category Entity
-    externalDocs:
-      description: Find out more
-      url: 'http://swagger.io'
-paths:
-  /category/create:
-    post:
-      tags:
-        - Category
-      summary: Create Category Entity
-      description: Create Category Entity
-      requestBody:
-        description: Category Fill to All Fields
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Category'
-      responses:
-        201:
-          description: Successfully Created Entity
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Category'
-        400:
-          description: Invalid Validation
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/responses/InvalidValidationException'
-      security:
-        - api_key: [ ]
-  /category/update:
-    put:
-      tags:
-        - Category
-      summary: Update Category Entity
-      description: Update Category Entity
-      requestBody:
-        description: Category Fill to All Fields
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Category'
-      responses:
-        200:
-          description: Successfully Updated Entity
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Category'
-        400:
-          description: Invalid Validation
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/responses/InvalidValidationException'
-        404:
-          description: Category Not Found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/responses/NotFound'
-      security:
-        - api_key: [ ]
-  /category/delete/{id}:
-    delete:
-      tags:
-        - Category
-      summary: Deleted Category Entity
-      description: Deleted Category Entity
-      parameters:
-        - name: id
-          in: query
-          description: Must Be Enter Id
-          required: true
-          schema:
-            type: integer
-      responses:
-        204:
-          description: Successfully Deleted - Category
-        400:
-          description: Invalid Validation
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/responses/InvalidValidationException'
-        404:
-          description: Category Not Found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/responses/NotFound'
-      security:
-        - api_key: [ ]
-  /category/get/{id}:
-    get:
-      tags:
-        - Category
-      summary: Get Category Entity
-      description: Get Category Entity
-      parameters:
-        - name: id
-          in: query
-          description: Must Be Enter Id
-          required: true
-          schema:
-            type: integer
-      responses:
-        200:
-          description: Successfully Get - Category
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Category'
-        400:
-          description: Invalid Validation
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/responses/InvalidValidationException'
-        404:
-          description: Category Not Found
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/responses/NotFound'
-components:
-  schemas:
-    Category:
-      type: object
-      properties:
-        id:
-          type: integer
-          format: int32
-          example: 1
-        name:
-          type: string
-          example: Swamp
-        code:
-          type: string
-          example: SWAMP
-  responses:
-    NotFound:
-      description: Entity not found
-    InvalidValidationException:
-      description: Invalid Validation
-    RuntimeException:
-      description: Entity Created Exception
-````
-
-# Json Configuration
-
-````json
-{
-  "openapi": "3.0.1",
-  "info": {
-    "title": "Spring 6 Swagger 2 JSON Example",
-    "description": "Spring 6 Swagger Simple Application",
-    "license": {
-      "name": "Apache 2.0",
-      "url": "http://springdoc.org"
-    },
-    "version": "v0.0.01"
-  },
-  "externalDocs": {
-    "description": "SpringShop Wiki Documentation",
-    "url": "https://springshop.wiki.github.org/docs"
-  },
-  "servers": [
-    {
-      "url": "http://localhost:8080",
-      "description": "Generated server url"
-    }
-  ],
-  "paths": {
-    "/item/create": {
-      "post": {
-        "tags": [
-          "item-controller"
-        ],
-        "operationId": "create",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          {
-            "name": "name",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "description",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "price",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "number",
-              "format": "double"
-            }
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "CREATED",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/Item"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "api_key": []
-          }
-        ]
-      }
-    },
-    "/item/update": {
-      "put": {
-        "tags": [
-          "item-controller"
-        ],
-        "operationId": "update",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          },
-          {
-            "name": "name",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "description",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "price",
-            "in": "query",
-            "required": false,
-            "schema": {
-              "type": "number",
-              "format": "double"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/Item"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "api_key": []
-          }
-        ]
-      }
-    },
-    "/item/get/{id}": {
-      "get": {
-        "tags": [
-          "item-controller"
-        ],
-        "operationId": "get",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/Item"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "api_key": []
-          }
-        ]
-      }
-    },
-    "/item/delete/{id}": {
-      "delete": {
-        "tags": [
-          "item-controller"
-        ],
-        "operationId": "delete",
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int64"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        },
-        "security": [
-          {
-            "api_key": []
-          }
-        ]
-      }
-    }
-  },
-  "components": {
-    "schemas": {
-      "Item": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "name": {
-            "type": "string",
-            "example": "Nurislom"
-          },
-          "description": {
-            "type": "string",
-            "example": "Lorem Ipsum"
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
-          }
-        }
-      }
-    },
-    "securitySchemes": {
-      "api_key": {
-        "type": "http",
-        "scheme": "bearer",
-        "bearerFormat": "JWT"
-      }
-    }
-  }
-}
-````
-
-# Enabling YAML OR JSON
-
-````properties
-springdoc.swagger-ui.config-url=/swagger-url.json
-springdoc.paths-to-match=/store/**, /config/**
 ````
 
 <details>
@@ -606,3 +324,33 @@ springdoc.paths-to-match=/store/**, /config/**
 ````
 
 </details>
+
+## Grouping
+
+````java
+class Config {
+    @Bean
+    public GroupedOpenApi annotationGroupAPI() {
+        return GroupedOpenApi.builder()
+                .group("annotation")
+                .pathsToMatch("/store/**", "/config/**")
+                .build();
+    }
+}
+````
+
+## Cors
+
+````java
+class Config {
+    @Bean
+    public WebMvcConfigurer corsConfigurer() {
+        return new WebMvcConfigurer() {
+            @Override
+            public void addCorsMappings(CorsRegistry registry) {
+                registry.addMapping("/**").allowedOrigins("*");
+            }
+        };
+    }
+}
+````
