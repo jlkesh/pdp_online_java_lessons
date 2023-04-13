@@ -7,8 +7,11 @@
 
 ## Lesson 2
 
-* Spring Boot nima ?
+* REST API nima ?
+* REST FULL API nima ?
+* REST FULL WEAPI nima ?
 * Spring va Spring Boot ni farqi nima ?
+* 
 
 ## Lesson 3
 
