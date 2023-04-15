@@ -1,0 +1,44 @@
+[
+  {
+    "date": "2022-03-25",
+    "product": "Apple",
+    "quantity": 5,
+    "price": 1.0
+  },
+  {
+    "date": "2022-03-25",
+    "product": "Orange",
+    "quantity": 3,
+    "price": 1.5
+  },
+  {
+    "date": "2022-03-26",
+    "product": "Banana",
+    "quantity": 2,
+    "price": 0.5
+  },
+  {
+    "date": "2022-03-27",
+    "product": "Apple",
+    "quantity": 7,
+    "price": 1.0
+  },
+  {
+    "date": "2022-03-27",
+    "product": "Orange",
+    "quantity": 4,
+    "price": 1.5
+  },
+  {
+    "date": "2022-03-27",
+    "product": "Banana",
+    "quantity": 3,
+    "price": 0.5
+  },
+  {
+    "date": "2022-03-25",
+    "product": "Banana",
+    "quantity": 2,
+    "price": 1.2
+  }
+]
