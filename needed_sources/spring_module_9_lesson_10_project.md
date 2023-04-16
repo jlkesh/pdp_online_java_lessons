@@ -566,6 +566,9 @@ public class AuthUserOtp extends Auditable {
 ````
 </details>
 
+[keysgenerator](https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx)
+
+[shorturl](https://www.shorturl.at/)
 
 
 
