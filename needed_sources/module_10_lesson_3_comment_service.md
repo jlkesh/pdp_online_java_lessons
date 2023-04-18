@@ -1,6 +1,6 @@
 # Comments-Service
 
-[Yuklab Olish](comments-service.jar)
+[Yuklab Olish](./comments-service.jar)
 
 ````shell
 java -jar comments-service.jar
