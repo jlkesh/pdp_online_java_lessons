@@ -19,14 +19,24 @@
 * `MongoDB` da `unique index` qanday yaratiladi ?
 * `MongoDB` da `user` qanday yaratiladi ?
 
-
 # Lesson 2
+
 * `Java Application` dan turing qandey qilib `MongoDB` ga bog'lanish mumkin.
 * ushbu `mongodb-driver-sync` library ning asosiy class larni ayting ?
 * `mongodb-driver-sync` dan qanday qilib ma'lumotlarni sort qilish mumkin.
 * `Spring Data MongoDB` qanday project ya'ni `mongodb-driver-sync` dan nima ustunligi bor ?
-* `@Id` `annotation` vazifasi nima 
-* `@Field` `annotation` vazifasi nima ? 
+* `@Id` `annotation` vazifasi nima
+* `@Field` `annotation` vazifasi nima ?
 * `@Indexed` `annotation` vazifasi nima ?
 * `MongoTemplate` qanday class ?
 * Qanday qilib ma'lumotlarni `database` `Paged`  qilib o'qish mumkin ?
+
+# Lesson 3
+
+* `External API` lardan foydalanish nima uchun kerak bo'ladi ?
+* `RestTemplate` ni vazifasi nima ?
+* `WebClient` ni vazifasi nima ?
+* `RestTemplate` va `WebClient` ni nima farqi bor ?
+* `OpenFeign` nima ?
+* `Traverson` `class` ning vazifasi nima ?
+
