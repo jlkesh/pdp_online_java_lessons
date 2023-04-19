@@ -1,4 +1,4 @@
-# Comments-Service
+# Hateoas-Service
 
 [Yuklab Olish](./hateoas-api-service.jar)
 
