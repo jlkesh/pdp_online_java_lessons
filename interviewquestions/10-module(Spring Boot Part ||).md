@@ -40,3 +40,15 @@
 * `OpenFeign` nima ?
 * `Traverson` `class` ning vazifasi nima ?
 
+# Lesson 4
+
+* Database Migration nima ?
+* Database migration nima uchun muhim ?
+* `Flyway` nima ?
+* `Repeatable` migration nima ?
+* `Versioned` migration nima ?
+* `Undoable` migration nima ?
+* `Liquibase` nima ?
+* `Changelog` nima ?
+* `ChangeSet` nima ?
+* `Flyway` va `Liquibase` ni farqi nima ?
