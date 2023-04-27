@@ -596,9 +596,9 @@ public class AuthUserOtp extends Auditable {
 
 [shorturl](https://www.shorturl.at/)
 
+[Short URL Logo](../needed_sources/short_url_logo.png)
 
+[Activation HTML](../needed_sources/activation.html)
 
-
-
-
+[Report HTML](../needed_sources/report.html)
 
