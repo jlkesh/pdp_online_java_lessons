@@ -56,13 +56,10 @@
 
 </details>
 
-# untill done
-
 <details>
 <summary>Lesson 3 (Data Jackson)</summary>
 
-* `Car` nomli `class` yarating. Ushbu `class`ni `object`ni `json-ga` o'tkazadigan va `json-dan` `object` ga o'tkazadigan
-  methodlar yozing.
+* `Car` nomli `class` yarating. Ushbu `class`ni `object`ni `json-ga` o'tkazadigan va `json-dan` `object` ga o'tkazadigan methodlar yozing.
   ```java
   public class Car {
         private String color;
@@ -70,10 +67,10 @@
         // .... constructors, getters, settters
   }
     ```
-* Endi tepadagi `method` larni qayta yozing faqat `Car` object bilan emas objectlarni list json-ga aylantiradigan va
-  json-dan `Car` list aylantiradigan methodlarni yozing.
-* Endi `Car` objectga yangi property qo'shing va ushbu propertyni json-dan object convert qilayotgan paytda ignore
-  qiling.
+* `Car class object` larni json-array ga aylantiradigan va
+  json array ni `Car` lar listiga  aylantiradigan methodlarni yozing.
+* Endi `Car` objectga yangi property qo'shing va ushbu propertyni json-dan object convert qilayotgan paytda ignore 
+qiling.
 * `JsonGenerator` pastdagi classni json yarating.
     * ```java
   public class Transaction {
@@ -112,7 +109,7 @@
         private final String lastName;
         private final int age;
         
-        // standard getters setters
+        // standard constructor, getter
   }
     ```
 * `XmlMapper` dan foydalanib `Person` objectlarni `List` file yozadigan va file o'qiydigan methodlar yozing.
@@ -196,9 +193,7 @@
 * Entities
     * ```java
   @Entity
-  @Table(name = "auth_user", uniqueConstraints = {
-  @UniqueConstraint(columnNames = "id")
-  })
+  @Table(name = "auth_user")
   public class AuthUserEntity {
 
         @Id
@@ -224,7 +219,7 @@
 <summary>Lesson 6 (Securing REST API)</summary>
 
 * Dars davomida yozilgan security o'zingiz qayta yozib ko'ring!.
-* `Item` API lariga faqat ADMIN kiritadigan, `Store` API lariga esa faqat USER kiritadigan check qo'ying method levelda.
+* `Item` API lariga faqat ADMIN rolidagilar kiritadigan, `Store` API lariga esa faqat USER rolidagilar kiritadigan check qo'ying method levelda(**Eslatma : Authentication JWT bearer token bilan bo'lishi kerak** .
     * ```java
   @RestController
   @RequestMapping(value = "/item/*")
@@ -450,13 +445,11 @@
     - www.abc.com
     - www.xyz.com
   ```
-* `FreeMarker`dan foydalanib login va register pagelarni yasang.
-* Bundan oldin taskda `FreeMarker` orqali yasalgan login pagega User login qilingda `MailSender` orqali gmailga habar
-  yuboradigan qiling.
-    * Istalgan habar yuborishingiz mumkin. misol uchun - `Successfully Authorization`
+* Register API yozing.
+* Register qilinganda profile activation uchun html ga asoslangan mail jo'nating. `freemarker` Dan foydalangan holda.
 * kichik TODO dastur yozing va dasturda qo'shimcha har kuni ertalab va kechqurun gmail-ga hali bajarilmagan todolarni
-  list yuboradigan scheduler yozing.
-* `@RequestMapping` annotation qo'yilgan method chaqirilganda, method bajarilishidan oldin log tashlaydigan dastur
+  list yuboradigan scheduler yozing( **xabar uchun html ni Freemarker orqali generate qiling**).
+* `@RequestMapping` annotation qo'yilgan method chaqirilganda, method bajarilishidan oldin va keyin log tashlaydigan dastur
   yozing.
 * `@Service` annotation qoyil classlarni istal method chaqirilgan log tashlaydigan dastur yozing. log method
   bajarilishidan
