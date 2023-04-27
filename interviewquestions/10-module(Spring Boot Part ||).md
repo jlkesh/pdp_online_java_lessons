@@ -52,3 +52,8 @@
 * `Changelog` nima ?
 * `ChangeSet` nima ?
 * `Flyway` va `Liquibase` ni farqi nima ?
+
+# Lesson 5
+* `Event Oriented Programming` nima ?
+* `EOP` dan nima maqsad da foydalansak bo'ladi ?
+* 
