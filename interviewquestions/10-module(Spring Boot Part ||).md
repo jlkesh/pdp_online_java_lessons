@@ -54,6 +54,67 @@
 * `Flyway` va `Liquibase` ni farqi nima ?
 
 # Lesson 5
+
 * `Event Oriented Programming` nima ?
 * `EOP` dan nima maqsad da foydalansak bo'ladi ?
-* 
+* `Spring DA EOP` ni qanday amalga oshiramiz ?
+* `Spring Events` nima ?
+* **ApplicationEventPublisher** qanday class.
+* `@EventListener` **annotatsiya** sini vazifasi nima ?
+* `@TransactionalEventListener` **annotatsiya** sini vazifasi nima ?
+* `Spring` `da` `EOP` bilan qanday muammolar bo'lishi mumkin va qanday qilib ushbu muammolarni xal qilish mumkin ?
+
+# Lesson 6
+
+* `Cache` nima ?
+* Nima uchun `REST arxitectura`sida `cache` muhim tushuncha xisoblanadi ?
+* `CacheManager` qanday `interface`.
+* Qanday `Request(GET, POST, DELETE........)` lar `cache` lanishi kerak ?
+* Qachon `cache` dan foydalanmaslik kerak ?
+* `Redis` nima ?
+* `Spring` da qanday qilib `Cache` dan foydalansak bo'ladi ?
+
+# Lesson 7
+
+* `Manual Testing` nima ?
+* `Manual Testing` ni nimasi no'to'ri , nima uchun `Manual Testing` qilmaslik kerak ?
+* `Auto Testing` nima ?
+* `blackbox Test` nima ?
+* `whitebox Test` nima ?
+* `Unit Test` nima ?
+* `Unit Test` ning vazifasi nima ?
+* `Unit Test` ning afzalliklari nima ?
+* Qanday `unit testing framework` larni bilasiz ?
+* `junit` nima ?
+* `test reporting` uchun qanday `plugin` larni bilasiz ?
+* `TDD` nima ?
+* `Mocking` nima ?
+* Qanday `Mocking framework` larni bilasiz ?
+
+# Lesson 8
+
+* `Mockito` nima ?
+* `Spring` da qanday `Test` yozish uchun `Annotation` larni bilasiz ?
+* `Integration Testing`  nima ?
+* `@SpringBootTest` annotation ni vazifasi nima ?
+* `@DataJpaTest` annotation ni vazifasi nima ?
+* `@WebMvcTest` annotation ni vazifasi nima ?
+
+# Lesson 9
+
+* `Spring Shell` qanday project ?
+* `jline` nima ?
+
+# Lesson 10
+
+* `Rest` Arxitekturasida qanday cheklovlar bor ?
+* `GraphQL` nima ?
+* `Schema` nima ?
+* `SDL` nima ?
+* `GraphQL` qanday til xisoblanadi(`static` yoki `dynamic`) ?
+* `graphiql` nima ?
+* Qanday `Root Operation Type` larni bilasiz ?
+* `MutationMapping` bilan `SchemaMapping` ni nima farqi bor ?
+* `QueryMapping` bilan `SchemaMapping` ni nima farqi bor ?
+
+
