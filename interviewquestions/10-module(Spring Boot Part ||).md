@@ -87,6 +87,7 @@
 * Qanday `unit testing framework` larni bilasiz ?
 * `junit` nima ?
 * `test reporting` uchun qanday `plugin` larni bilasiz ?
+* **F.I.R.S.T** nima ?
 * `TDD` nima ?
 * `Mocking` nima ?
 * Qanday `Mocking framework` larni bilasiz ?
