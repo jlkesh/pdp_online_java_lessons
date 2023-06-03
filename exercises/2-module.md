@@ -113,9 +113,7 @@ Rasmbda berilgan struktura asosida classlarni yarating.
 
 * Rasmbda berilgan struktura asosida classlarni yarating.
 * Bir necha Student objectlar dan tashkil topgan massiv yarating
-* Studentdan yangi object yarating va osha object massiv ichida teng bolgan
-  objectni topib, massiv ichidan topilgan Student objectini passwordini o'zgartiring.
-* Ozgartiryapganda oldPassword oldingi passwordga teng bo'lsa yangisini o'zlashtiring
+* Password ni reset qiladigan method yozing. Va ushbu method ga phone, yangi password hamda eski password berilsa va shu phone bilan password di teng bo'lgan student ni password n i yangi password ga o'zgartirsin.
 
 </details>
 </ul>
